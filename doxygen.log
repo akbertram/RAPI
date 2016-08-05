@@ -75,8 +75,6 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/info
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/heads
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/03
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/05
@@ -128,7 +126,6 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9e
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a4
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ac
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b1
@@ -157,8 +154,6 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/pack
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/heads
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/tags
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs/RAPI
