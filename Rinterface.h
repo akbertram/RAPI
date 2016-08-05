@@ -60,9 +60,9 @@ extern Rboolean R_Interactive;	/* TRUE during interactive use*/
 extern Rboolean	R_Slave;	/* Run as a slave process */
 
 extern void R_RestoreGlobalEnv(void);
-extern void R_RestoreGlobalEnvFromFile(const char *, Rboolean);
+extern void R_RestoreGlobalEnvFromFile(const char * name, Rboolean quiet);
 extern void R_SaveGlobalEnv(void);
-extern void R_SaveGlobalEnvToFile(const char *);
+extern void R_SaveGlobalEnvToFile(const char * name);
 extern void R_FlushConsole(void);
 extern void R_ClearerrConsole(void);
 extern void R_Suicide(const char *);

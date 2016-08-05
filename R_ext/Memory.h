@@ -39,15 +39,15 @@ extern "C" {
 #endif
 
 void*	vmaxget(void);
-void	vmaxset(const void *);
+void	vmaxset(const void * ovmax);
 
 void	R_gc(void);
 int	R_gc_running();
 
-char*	R_alloc(size_t, int);
+char*	R_alloc(size_t nelem, int eltsize);
 long double *R_allocLD(size_t nelem);
-char*	S_alloc(long, int);
-char*	S_realloc(char *, long, long, int);
+char*	S_alloc(long nelem, int eltsize);
+char*	S_realloc(char * p, long new, long old, int size);
 
 #ifdef  __cplusplus
 }

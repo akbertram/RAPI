@@ -36,11 +36,11 @@ extern "C" {
 # include <stdarg.h>
 #endif
 
-void Rprintf(const char *, ...);
-void REprintf(const char *, ...);
+void Rprintf(const char * format, ...);
+void REprintf(const char * format, ...);
 #if !defined(__cplusplus) || defined R_USE_C99_IN_CXX
-void Rvprintf(const char *, va_list);
-void REvprintf(const char *, va_list);
+void Rvprintf(const char * format, va_list arg);
+void REvprintf(const char * format, va_list arg);
 #endif
 
 #ifdef  __cplusplus

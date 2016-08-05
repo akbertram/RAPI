@@ -769,7 +769,7 @@ struct _DevDesc {
 #define AdobeSymbol2utf8	Rf_AdobeSymbol2utf8
 
 /* Properly declared version of devNumber */
-int ndevNumber(pDevDesc );
+int ndevNumber(pDevDesc  dd);
 
 /* How many devices exist ? (>= 1) */
 int NumDevices(void);
@@ -782,20 +782,20 @@ Rboolean R_CheckDeviceAvailableBool(void);
 int curDevice(void);
 
 /* Return the number of the next device. */
-int nextDevice(int);
+int nextDevice(int from);
 
 /* Return the number of the previous device. */
-int prevDevice(int);
+int prevDevice(int from);
 
 /* Make the specified device (specified by number) the current device */
-int selectDevice(int);
+int selectDevice(int devNum);
 
 /* Kill device which is identified by number. */
-void killDevice(int);
+void killDevice(int devNum);
 
 int NoDevices(void); /* used in engine, graphics, plot, grid */
 
-void NewFrameConfirm(pDevDesc); /* used in graphics.c, grid */
+void NewFrameConfirm(pDevDesc dd); /* used in graphics.c, grid */
 
 
 /* Graphics events: defined in gevents.c */

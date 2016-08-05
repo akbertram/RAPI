@@ -740,15 +740,15 @@ LibExtern SEXP	R_BlankString;	    /* "" as a CHARSXP */
 LibExtern SEXP	R_BlankScalarString;	    /* "" as a STRSXP */
 
 /* srcref related functions */
-SEXP R_GetCurrentSrcref(int);
-SEXP R_GetSrcFilename(SEXP);
+SEXP R_GetCurrentSrcref(int skip);
+SEXP R_GetSrcFilename(SEXP srcref);
 
 /*--- FUNCTIONS ------------------------------------------------------ */
 
 /* Type Coercions of all kinds */
 
-SEXP Rf_asChar(SEXP);
-SEXP Rf_coerceVector(SEXP, SEXPTYPE);
+SEXP Rf_asChar(SEXP x);
+SEXP Rf_coerceVector(SEXP v, SEXPTYPE type);
 SEXP Rf_PairToVectorList(SEXP x);
 SEXP Rf_VectorToPairList(SEXP x);
 SEXP Rf_asCharacterFactor(SEXP x);
@@ -765,112 +765,112 @@ typedef struct R_allocator R_allocator_t;
 
 /* Other Internally Used Functions, excluding those which are inline-able*/
 
-char * Rf_acopy_string(const char *);
+char * Rf_acopy_string(const char * in);
 void Rf_addMissingVarsToNewEnv(SEXP, SEXP);
-SEXP Rf_alloc3DArray(SEXPTYPE, int, int, int);
-SEXP Rf_allocArray(SEXPTYPE, SEXP);
+SEXP Rf_alloc3DArray(SEXPTYPE mode, int nrow, int ncol, int nface);
+SEXP Rf_allocArray(SEXPTYPE mode, SEXP dims);
 SEXP Rf_allocFormalsList2(SEXP sym1, SEXP sym2);
 SEXP Rf_allocFormalsList3(SEXP sym1, SEXP sym2, SEXP sym3);
 SEXP Rf_allocFormalsList4(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4);
 SEXP Rf_allocFormalsList5(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4, SEXP sym5);
 SEXP Rf_allocFormalsList6(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4, SEXP sym5, SEXP sym6);
-SEXP Rf_allocMatrix(SEXPTYPE, int, int);
-SEXP Rf_allocList(int);
+SEXP Rf_allocMatrix(SEXPTYPE mode, int nrow, int ncol);
+SEXP Rf_allocList(int n);
 SEXP Rf_allocS4Object(void);
-SEXP Rf_allocSExp(SEXPTYPE);
-SEXP Rf_allocVector3(SEXPTYPE, R_xlen_t, R_allocator_t*);
+SEXP Rf_allocSExp(SEXPTYPE t);
+SEXP Rf_allocVector3(SEXPTYPE type, R_xlen_t length, R_allocator_t* allocator);
 R_xlen_t Rf_any_duplicated(SEXP x, Rboolean from_last);
 R_xlen_t Rf_any_duplicated3(SEXP x, SEXP incomp, Rboolean from_last);
-SEXP Rf_applyClosure(SEXP, SEXP, SEXP, SEXP, SEXP);
-SEXP Rf_arraySubscript(int, SEXP, SEXP, SEXP (*)(SEXP,SEXP),
-                       SEXP (*)(SEXP, int), SEXP);
-SEXP Rf_classgets(SEXP, SEXP);
-SEXP Rf_cons(SEXP, SEXP);
-void Rf_copyMatrix(SEXP, SEXP, Rboolean);
-void Rf_copyListMatrix(SEXP, SEXP, Rboolean);
-void Rf_copyMostAttrib(SEXP, SEXP);
-void Rf_copyVector(SEXP, SEXP);
-int Rf_countContexts(int, int);
-SEXP Rf_CreateTag(SEXP);
-void Rf_defineVar(SEXP, SEXP, SEXP);
-SEXP Rf_dimgets(SEXP, SEXP);
-SEXP Rf_dimnamesgets(SEXP, SEXP);
-SEXP Rf_DropDims(SEXP);
-SEXP Rf_duplicate(SEXP);
-SEXP Rf_shallow_duplicate(SEXP);
-SEXP Rf_lazy_duplicate(SEXP);
+SEXP Rf_applyClosure(SEXP call, SEXP op, SEXP arglist, SEXP rho, SEXP suppliedvars);
+SEXP Rf_arraySubscript(int dim, SEXP s, SEXP dims, SEXP (*)(SEXP,SEXP dng),
+                       SEXP (*)(SEXP, int strg), SEXP x);
+SEXP Rf_classgets(SEXP vec, SEXP klass);
+SEXP Rf_cons(SEXP car, SEXP cdr);
+void Rf_copyMatrix(SEXP s, SEXP t, Rboolean byrow);
+void Rf_copyListMatrix(SEXP s, SEXP t, Rboolean byrow);
+void Rf_copyMostAttrib(SEXP inp, SEXP ans);
+void Rf_copyVector(SEXP s, SEXP t);
+int Rf_countContexts(int ctxttype, int browser);
+SEXP Rf_CreateTag(SEXP x);
+void Rf_defineVar(SEXP symbol, SEXP value, SEXP rho);
+SEXP Rf_dimgets(SEXP vec, SEXP val);
+SEXP Rf_dimnamesgets(SEXP vec, SEXP val);
+SEXP Rf_DropDims(SEXP x);
+SEXP Rf_duplicate(SEXP s);
+SEXP Rf_shallow_duplicate(SEXP s);
+SEXP Rf_lazy_duplicate(SEXP s);
 /* the next really should not be here and is also in Defn.h */
-SEXP Rf_duplicated(SEXP, Rboolean);
-Rboolean R_envHasNoSpecialSymbols(SEXP);
-SEXP Rf_eval(SEXP, SEXP);
-SEXP Rf_findFun(SEXP, SEXP);
-void Rf_findFunctionForBody(SEXP);
-SEXP Rf_findVar(SEXP, SEXP);
-SEXP Rf_findVarInFrame(SEXP, SEXP);
-SEXP Rf_findVarInFrame3(SEXP, SEXP, Rboolean);
-SEXP Rf_getAttrib(SEXP, SEXP);
-SEXP Rf_GetArrayDimnames(SEXP);
-SEXP Rf_GetColNames(SEXP);
-void Rf_GetMatrixDimnames(SEXP, SEXP*, SEXP*, const char**, const char**);
-SEXP Rf_GetOption(SEXP, SEXP); /* pre-2.13.0 compatibility */
-SEXP Rf_GetOption1(SEXP);
+SEXP Rf_duplicated(SEXP x, Rboolean from_last);
+Rboolean R_envHasNoSpecialSymbols(SEXP env);
+SEXP Rf_eval(SEXP e, SEXP rho);
+SEXP Rf_findFun(SEXP symbol, SEXP rho);
+void Rf_findFunctionForBody(SEXP body);
+SEXP Rf_findVar(SEXP symbol, SEXP rho);
+SEXP Rf_findVarInFrame(SEXP rho, SEXP symbol);
+SEXP Rf_findVarInFrame3(SEXP rho, SEXP symbol, Rboolean doGet);
+SEXP Rf_getAttrib(SEXP vec, SEXP name);
+SEXP Rf_GetArrayDimnames(SEXP x);
+SEXP Rf_GetColNames(SEXP dimnames);
+void Rf_GetMatrixDimnames(SEXP x, SEXP* rl, SEXP* cl, const char** rn, const char** cn);
+SEXP Rf_GetOption(SEXP tag, SEXP rho); /* pre-2.13.0 compatibility */
+SEXP Rf_GetOption1(SEXP tag);
 int Rf_GetOptionDigits(void);
 int Rf_GetOptionWidth(void);
-SEXP Rf_GetRowNames(SEXP);
-void Rf_gsetVar(SEXP, SEXP, SEXP);
-SEXP Rf_install(const char *);
-SEXP Rf_installChar(SEXP);
+SEXP Rf_GetRowNames(SEXP dimnames);
+void Rf_gsetVar(SEXP symbol, SEXP value, SEXP rho);
+SEXP Rf_install(const char * name);
+SEXP Rf_installChar(SEXP charSXP);
 SEXP Rf_installDDVAL(int i);
 SEXP Rf_installS3Signature(const char *, const char *);
-Rboolean Rf_isFree(SEXP);
-Rboolean Rf_isOrdered(SEXP);
+Rboolean Rf_isFree(SEXP val);
+Rboolean Rf_isOrdered(SEXP s);
 Rboolean Rf_isUnmodifiedSpecSym(SEXP sym, SEXP env);
-Rboolean Rf_isUnordered(SEXP);
-Rboolean Rf_isUnsorted(SEXP, Rboolean);
-SEXP Rf_lengthgets(SEXP, R_len_t);
-SEXP Rf_xlengthgets(SEXP, R_xlen_t);
-SEXP R_lsInternal(SEXP, Rboolean);
-SEXP R_lsInternal3(SEXP, Rboolean, Rboolean);
-SEXP Rf_match(SEXP, SEXP, int);
-SEXP Rf_matchE(SEXP, SEXP, int, SEXP);
-SEXP Rf_namesgets(SEXP, SEXP);
-SEXP Rf_mkChar(const char *);
-SEXP Rf_mkCharLen(const char *, int);
-Rboolean Rf_NonNullStringMatch(SEXP, SEXP);
-int Rf_ncols(SEXP);
-int Rf_nrows(SEXP);
-SEXP Rf_nthcdr(SEXP, int);
+Rboolean Rf_isUnordered(SEXP s);
+Rboolean Rf_isUnsorted(SEXP x, Rboolean strictly);
+SEXP Rf_lengthgets(SEXP x, R_len_t len);
+SEXP Rf_xlengthgets(SEXP x, R_xlen_t len);
+SEXP R_lsInternal(SEXP env, Rboolean all);
+SEXP R_lsInternal3(SEXP env, Rboolean all, Rboolean sorted);
+SEXP Rf_match(SEXP itable, SEXP ix, int nmatch);
+SEXP Rf_matchE(SEXP itable, SEXP ix, int nmatch, SEXP env);
+SEXP Rf_namesgets(SEXP vec, SEXP val);
+SEXP Rf_mkChar(const char * name);
+SEXP Rf_mkCharLen(const char * name, int len);
+Rboolean Rf_NonNullStringMatch(SEXP s, SEXP t);
+int Rf_ncols(SEXP s);
+int Rf_nrows(SEXP s);
+SEXP Rf_nthcdr(SEXP s, int n);
 
 // ../main/character.c :
 typedef enum {Bytes, Chars, Width} nchar_type;
 int R_nchar(SEXP string, nchar_type type_,
 	    Rboolean allowNA, Rboolean keepNA, const char* msg_name);
 
-Rboolean Rf_pmatch(SEXP, SEXP, Rboolean);
-Rboolean Rf_psmatch(const char *, const char *, Rboolean);
-void Rf_PrintValue(SEXP);
+Rboolean Rf_pmatch(SEXP formal, SEXP tag, Rboolean exact);
+Rboolean Rf_psmatch(const char * f, const char * t, Rboolean exact);
+void Rf_PrintValue(SEXP s);
 #ifndef INLINE_PROTECT
 SEXP Rf_protect(SEXP);
 #endif
 void Rf_readS3VarsFromFrame(SEXP, SEXP*, SEXP*, SEXP*, SEXP*, SEXP*, SEXP*);
-SEXP Rf_setAttrib(SEXP, SEXP, SEXP);
-void Rf_setSVector(SEXP*, int, SEXP);
-void Rf_setVar(SEXP, SEXP, SEXP);
-SEXP Rf_stringSuffix(SEXP, int);
-SEXPTYPE Rf_str2type(const char *);
-Rboolean Rf_StringBlank(SEXP);
-SEXP Rf_substitute(SEXP,SEXP);
-const char * Rf_translateChar(SEXP);
-const char * Rf_translateChar0(SEXP);
-const char * Rf_translateCharUTF8(SEXP);
-const char * Rf_type2char(SEXPTYPE);
-SEXP Rf_type2rstr(SEXPTYPE);
-SEXP Rf_type2str(SEXPTYPE);
-SEXP Rf_type2str_nowarn(SEXPTYPE);
+SEXP Rf_setAttrib(SEXP vec, SEXP name, SEXP val);
+void Rf_setSVector(SEXP* vec, int len, SEXP val);
+void Rf_setVar(SEXP symbol, SEXP value, SEXP rho);
+SEXP Rf_stringSuffix(SEXP string, int fromIndex);
+SEXPTYPE Rf_str2type(const char * s);
+Rboolean Rf_StringBlank(SEXP x);
+SEXP Rf_substitute(SEXP lang,SEXP rho);
+const char * Rf_translateChar(SEXP x);
+const char * Rf_translateChar0(SEXP x);
+const char * Rf_translateCharUTF8(SEXP x);
+const char * Rf_type2char(SEXPTYPE t);
+SEXP Rf_type2rstr(SEXPTYPE t);
+SEXP Rf_type2str(SEXPTYPE t);
+SEXP Rf_type2str_nowarn(SEXPTYPE t);
 #ifndef INLINE_PROTECT
 void Rf_unprotect(int);
 #endif
-void Rf_unprotect_ptr(SEXP);
+void Rf_unprotect_ptr(SEXP s);
 
 void NORET R_signal_protect_error(void);
 void NORET R_signal_unprotect_error(void);
@@ -880,14 +880,14 @@ void NORET R_signal_reprotect_error(PROTECT_INDEX i);
 void R_ProtectWithIndex(SEXP, PROTECT_INDEX *);
 void R_Reprotect(SEXP, PROTECT_INDEX);
 #endif
-SEXP R_tryEval(SEXP, SEXP, int *);
-SEXP R_tryEvalSilent(SEXP, SEXP, int *);
+SEXP R_tryEval(SEXP e, SEXP env, int * ErrorOccurred);
+SEXP R_tryEvalSilent(SEXP e, SEXP env, int * ErrorOccurred);
 const char *R_curErrorBuf();
 
-Rboolean Rf_isS4(SEXP);
-SEXP Rf_asS4(SEXP, Rboolean, int);
-SEXP Rf_S3Class(SEXP);
-int Rf_isBasicClass(const char *);
+Rboolean Rf_isS4(SEXP s);
+SEXP Rf_asS4(SEXP s, Rboolean flag, int complete);
+SEXP Rf_S3Class(SEXP obj);
+int Rf_isBasicClass(const char * ss);
 
 Rboolean R_cycle_detected(SEXP s, SEXP child);
 
@@ -900,9 +900,9 @@ typedef enum {
     CE_ANY    =99
 } cetype_t;
 
-cetype_t Rf_getCharCE(SEXP);
-SEXP Rf_mkCharCE(const char *, cetype_t);
-SEXP Rf_mkCharLenCE(const char *, int, cetype_t);
+cetype_t Rf_getCharCE(SEXP x);
+SEXP Rf_mkCharCE(const char * name, cetype_t enc);
+SEXP Rf_mkCharLenCE(const char * name, int len, cetype_t enc);
 const char *Rf_reEnc(const char *x, cetype_t ce_in, cetype_t ce_out, int subst);
 
 				/* return(.) NOT reached : for -Wall */
@@ -942,13 +942,13 @@ SEXP R_WeakRefKey(SEXP w);
 SEXP R_WeakRefValue(SEXP w);
 void R_RunWeakRefFinalizer(SEXP w);
 
-SEXP R_PromiseExpr(SEXP);
-SEXP R_ClosureExpr(SEXP);
+SEXP R_PromiseExpr(SEXP p);
+SEXP R_ClosureExpr(SEXP p);
 void R_initialize_bcode(void);
-SEXP R_bcEncode(SEXP);
-SEXP R_bcDecode(SEXP);
-void R_registerBC(SEXP, SEXP);
-Rboolean R_checkConstants(Rboolean);
+SEXP R_bcEncode(SEXP bytes);
+SEXP R_bcDecode(SEXP code);
+void R_registerBC(SEXP bcBytes, SEXP bcode);
+Rboolean R_checkConstants(Rboolean abortOnError);
 #define PREXPR(e) R_PromiseExpr(e)
 #define BODY_EXPR(e) R_ClosureExpr(e)
 
@@ -978,12 +978,12 @@ Rboolean R_HasFancyBindings(SEXP rho);
 /* ../main/errors.c : */
 /* needed for R_load/savehistory handling in front ends */
 #if defined(__GNUC__) && __GNUC__ >= 3
-void Rf_errorcall(SEXP, const char *, ...) __attribute__((noreturn));
+void Rf_errorcall(SEXP call, const char * format, ...) __attribute__((noreturn));
 #else
 void Rf_errorcall(SEXP, const char *, ...);
 #endif
-void Rf_warningcall(SEXP, const char *, ...);
-void Rf_warningcall_immediate(SEXP, const char *, ...);
+void Rf_warningcall(SEXP call, const char * format, ...);
+void Rf_warningcall_immediate(SEXP call, const char * format, ...);
 
 /* Save/Load Interface */
 #define R_XDR_DOUBLE_SIZE 8
@@ -1082,8 +1082,8 @@ int R_check_class_and_super(SEXP x, const char **valid, SEXP rho);
 int R_check_class_etc      (SEXP x, const char **valid);
 
 /* preserve objects across GCs */
-void R_PreserveObject(SEXP);
-void R_ReleaseObject(SEXP);
+void R_PreserveObject(SEXP object);
+void R_ReleaseObject(SEXP object);
 
 /* Shutdown actions */
 void R_dot_Last(void);		/* in main.c */
@@ -1091,9 +1091,9 @@ void R_RunExitFinalizers(void);	/* in memory.c */
 
 /* Replacements for popen and system */
 #ifdef HAVE_POPEN
-FILE *R_popen(const char *, const char *);
+FILE *R_popen(const char * command, const char * type);
 #endif
-int R_system(const char *);
+int R_system(const char * command);
 
 /* R_compute_identical:  C version of identical() function
    The third arg to R_compute_identical() consists of bitmapped flags for non-default options:
@@ -1105,7 +1105,7 @@ int R_system(const char *);
   16 = !IGNORE_ENV
   Default from R's default: 16
 */
-Rboolean R_compute_identical(SEXP, SEXP, int);
+Rboolean R_compute_identical(SEXP x, SEXP y, int flags);
 
 SEXP R_body_no_src(SEXP x); // body(x) without "srcref" etc, ../main/utils.c
 

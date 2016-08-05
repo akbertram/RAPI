@@ -90,11 +90,11 @@ typedef struct
 
 typedef structRstart *Rstart;
 
-void R_DefParams(Rstart);
-void R_SetParams(Rstart);
+void R_DefParams(Rstart Rp);
+void R_SetParams(Rstart Rp);
 void R_SetWin32(Rstart);
-void R_SizeFromEnv(Rstart);
-void R_common_command_line(int *, char **, Rstart);
+void R_SizeFromEnv(Rstart Rp);
+void R_common_command_line(int * pac, char ** argv, Rstart Rp);
 
 void R_set_command_line_arguments(int argc, char **argv);
 

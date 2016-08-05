@@ -60,9 +60,9 @@ extern "C" {
 
 /* S Like Memory Management */
 
-extern void *R_chk_calloc(size_t, size_t);
-extern void *R_chk_realloc(void *, size_t);
-extern void R_chk_free(void *);
+extern void *R_chk_calloc(size_t nelem, size_t elsize);
+extern void *R_chk_realloc(void * ptr, size_t size);
+extern void R_chk_free(void * ptr);
 
 #ifndef STRICT_R_HEADERS
 /* S-PLUS 3.x but not 5.x NULLs the pointer in the following */

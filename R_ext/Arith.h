@@ -54,9 +54,9 @@ LibExtern int	 R_NaInt;	/* NA_INTEGER:= INT_MIN currently */
 #define NA_REAL		R_NaReal
 /* NA_STRING is a SEXP, so defined in Rinternals.h */
 
-int R_IsNA(double);		/* True for R's NA only */
-int R_IsNaN(double);		/* True for special NaN, *not* for NA */
-int R_finite(double);		/* True if none of NA, NaN, +/-Inf */
+int R_IsNA(double x);		/* True for R's NA only */
+int R_IsNaN(double x);		/* True for special NaN, *not* for NA */
+int R_finite(double x);		/* True if none of NA, NaN, +/-Inf */
 #define ISNA(x)	       R_IsNA(x)
 
 /* ISNAN(): True for *both* NA and NaN.

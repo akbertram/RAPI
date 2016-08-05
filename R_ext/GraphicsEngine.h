@@ -271,12 +271,12 @@ typedef GEDevDesc* pGEDevDesc;
 #define desc2GEDesc		Rf_desc2GEDesc
 /* map DevDesc to enclosing GEDevDesc */
 pGEDevDesc desc2GEDesc(pDevDesc dd);
-int GEdeviceNumber(pGEDevDesc);
-pGEDevDesc GEgetDevice(int);
-void GEaddDevice(pGEDevDesc);
-void GEaddDevice2(pGEDevDesc, const char *);
-void GEaddDevice2f(pGEDevDesc, const char *, const char *);
-void GEkillDevice(pGEDevDesc);
+int GEdeviceNumber(pGEDevDesc dd);
+pGEDevDesc GEgetDevice(int i);
+void GEaddDevice(pGEDevDesc gdd);
+void GEaddDevice2(pGEDevDesc gdd, const char * name);
+void GEaddDevice2f(pGEDevDesc gdd, const char * name, const char * file);
+void GEkillDevice(pGEDevDesc gdd);
 pGEDevDesc GEcreateDevDesc(pDevDesc dev);
 
 void GEdestroyDevDesc(pGEDevDesc dd);
@@ -319,8 +319,8 @@ typedef unsigned int rcolor;
 
 /* Convert an element of a R colour specification (which might be a
    number or a string) into an internal colour specification. */
-rcolor RGBpar(SEXP, int);
-rcolor RGBpar3(SEXP, int, rcolor);
+rcolor RGBpar(SEXP x, int i);
+rcolor RGBpar3(SEXP x, int i, rcolor bg);
 
 /* Convert an internal colour specification to/from a colour name */
 const char *col2name(rcolor col); /* used in par.c, grid */
@@ -429,8 +429,8 @@ int GEstring_to_pch(SEXP pch);
  *  LINE TEXTURE CODE is concerned with the internals of R
  *  line texture representation.
  */
-unsigned int GE_LTYpar(SEXP, int);
-SEXP GE_LTYget(unsigned int);
+unsigned int GE_LTYpar(SEXP value, int ind);
+SEXP GE_LTYget(unsigned int lty);
 
 /*
  * Raster operations
@@ -512,7 +512,7 @@ void GEnullDevice(void);
 
 /* From ../../main/plot.c, used by ../../library/grid/src/grid.c : */
 #define CreateAtVector		Rf_CreateAtVector
-SEXP CreateAtVector(double*, double*, int, Rboolean);
+SEXP CreateAtVector(double* axp, double* usr, int nint, Rboolean logflag);
 /* From ../../main/graphics.c, used by ../../library/grDevices/src/axis_scales.c : */
 #define GAxisPars 		Rf_GAxisPars
 void GAxisPars(double *min, double *max, int *n, Rboolean log, int axis);

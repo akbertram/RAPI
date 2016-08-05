@@ -111,7 +111,7 @@ typedef struct Rf_RegisteredNativeSymbol R_RegisteredNativeSymbol;
 typedef enum {R_ANY_SYM=0, R_C_SYM, R_CALL_SYM, R_FORTRAN_SYM, R_EXTERNAL_SYM} NativeSymbolType;
 
 
-DL_FUNC R_FindSymbol(char const *, char const *, 
+DL_FUNC R_FindSymbol(char const * name, char const * pkg, 
                        R_RegisteredNativeSymbol *symbol);
 
 

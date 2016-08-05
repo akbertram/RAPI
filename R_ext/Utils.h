@@ -53,14 +53,14 @@ extern "C" {
 #endif
 
 /* ../../main/sort.c : */
-void	R_isort(int*, int);
-void	R_rsort(double*, int);
-void	R_csort(Rcomplex*, int);
-void    rsort_with_index(double *, int *, int);
-void	revsort(double*, int*, int);/* reverse; sort i[] alongside */
-void	iPsort(int*,    int, int);
-void	rPsort(double*, int, int);
-void	cPsort(Rcomplex*, int, int);
+void	R_isort(int* x, int n);
+void	R_rsort(double* x, int n);
+void	R_csort(Rcomplex* x, int n);
+void    rsort_with_index(double * x, int * indx, int n);
+void	revsort(double* a, int* ib, int n);/* reverse; sort i[] alongside */
+void	iPsort(int* x,    int n, int k);
+void	rPsort(double* x, int n, int k);
+void	cPsort(Rcomplex* x, int n, int k);
 
 /* ../../main/qsort.c : */
 /* dummy renamed to II to avoid problems with g++ on Solaris */
@@ -75,11 +75,11 @@ void F77_NAME(qsort3)(double *v,            int *ii, int *jj);
 
 /* ../../main/util.c  and others : */
 const char *R_ExpandFileName(const char *);
-void	setIVector(int*, int, int);
-void	setRVector(double*, int, double);
-Rboolean StringFalse(const char *);
-Rboolean StringTrue(const char *);
-Rboolean isBlankString(const char *);
+void	setIVector(int* vec, int len, int val);
+void	setRVector(double* vec, int len, double val);
+Rboolean StringFalse(const char * name);
+Rboolean StringTrue(const char * name);
+Rboolean isBlankString(const char * s);
 
 /* These two are guaranteed to use '.' as the decimal point,
    and to accept "NA".
@@ -92,7 +92,7 @@ char *R_tmpnam2(const char *prefix, const char *tempdir, const char *fileext);
 
 void R_CheckUserInterrupt(void);
 void R_CheckStack(void);
-void R_CheckStack2(size_t);
+void R_CheckStack2(size_t extra);
 
 
 /* ../../appl/interv.c: also in Applic.h */

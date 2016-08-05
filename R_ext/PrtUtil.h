@@ -45,24 +45,24 @@ extern "C" {
 #endif
 
 /* Computation of printing formats */
-void formatLogical(int *, R_xlen_t, int *);
-void formatInteger(int *, R_xlen_t, int *);
-void formatReal(double *, R_xlen_t, int *, int *, int *, int);
-void formatComplex(Rcomplex *, R_xlen_t, int *, int *, int *, int *, int *, int *, int);
+void formatLogical(int * x, R_xlen_t n, int * fieldwidth);
+void formatInteger(int * x, R_xlen_t n, int * fieldwidth);
+void formatReal(double * x, R_xlen_t n, int * w, int * d, int * e, int nsmall);
+void formatComplex(Rcomplex * x, R_xlen_t n, int * wr, int * dr, int * er, int * wi, int * di, int * ei, int nsmall);
 
 /* Formating of values */
-const char *EncodeLogical(int, int);
-const char *EncodeInteger(int, int);
-const char *EncodeReal0(double, int, int, int, const char *);
-const char *EncodeComplex(Rcomplex, int, int, int, int, int, int, const char *);
+const char *EncodeLogical(int x, int w);
+const char *EncodeInteger(int x, int w);
+const char *EncodeReal0(double x, int w, int d, int e, const char * dec);
+const char *EncodeComplex(Rcomplex x, int wr, int dr, int er, int wi, int di, int ei, const char * dec);
 
 /* Legacy, misused by packages RGtk2 and qtbase */
-const char *EncodeReal(double, int, int, int, char);
+const char *EncodeReal(double x, int w, int d, int e, char cdec);
 
 
 /* Printing */
-int	IndexWidth(R_xlen_t);
-void VectorIndex(R_xlen_t, int);
+int	IndexWidth(R_xlen_t n);
+void VectorIndex(R_xlen_t i, int w);
 
 //void printLogicalVector(int *, R_xlen_t, int);
 void printIntegerVector(int *, R_xlen_t, int);

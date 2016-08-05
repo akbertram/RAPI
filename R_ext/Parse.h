@@ -38,7 +38,7 @@ typedef enum {
     PARSE_EOF
 } ParseStatus;
 
-SEXP R_ParseVector(SEXP, int, ParseStatus *, SEXP);
+SEXP R_ParseVector(SEXP text, int n, ParseStatus * status, SEXP srcfile);
 
 #ifdef __cplusplus
 }
