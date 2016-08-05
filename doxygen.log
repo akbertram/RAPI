@@ -1,65 +1,38 @@
 warning: ignoring unsupported tag `ALLOW_UNICODE_NAMES    =' at line 79, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `MARKDOWN_SUPPORT       =' at line 313, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `AUTOLINK_SUPPORT       =' at line 321, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `GROUP_NESTED_COMPOUNDS =' at line 370, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `EXTRACT_PACKAGE        =' at line 450, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `HIDE_COMPOUND_REFERENCE=' at line 541, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `SHOW_GROUPED_MEMB_INC  =' at line 554, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `WARN_AS_ERROR          =' at line 765, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `USE_MDFILE_AS_MAINPAGE =' at line 984, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `SOURCE_TOOLTIPS        =' at line 1040, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `CLANG_ASSISTED_PARSING =' at line 1081, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `CLANG_OPTIONS          =' at line 1089, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `HTML_EXTRA_STYLESHEET  =' at line 1194, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `HTML_INDEX_NUM_ENTRIES =' at line 1264, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `MATHJAX_FORMAT         =' at line 1545, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `MATHJAX_CODEFILE       =' at line 1573, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `EXTERNAL_SEARCH        =' at line 1622, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `SEARCHENGINE_URL       =' at line 1633, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `SEARCHDATA_FILE        =' at line 1641, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `EXTERNAL_SEARCH_ID     =' at line 1649, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `EXTRA_SEARCH_MAPPINGS  =' at line 1659, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1761, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `LATEX_EXTRA_FILES      =' at line 1769, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1828, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1894, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1929, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `GENERATE_DOCBOOK       =' at line 1975, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `DOCBOOK_OUTPUT         =' at line 1983, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1992, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `EXTERNAL_PAGES         =' at line 2166, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `DIA_PATH               =' at line 2201, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `UML_LIMIT_NUM_FIELDS   =' at line 2295, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `DIAFILE_DIRS           =' at line 2413, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2421, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2426, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
-Illegal alias format `throws'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Can throw or otherwise cause a longjmp\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `throws{1}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Can throw or otherwise cause a longjmp:\n \1\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `gc'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Can cause GC\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `gc{1}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Can cause GC:\n \1\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `protects{1}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Protects: \1\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `protects{2}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Protects: \1, \2\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `protects{3}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Protects: \1, \2, \3\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `protects{4}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Protects: \1, \2, \3, \4\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `protects{5}'. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `='. Use "name=value" or "name(n)=value", where n is the number of arguments
-Illegal alias format `\par Protects: \1, \2, \3, \4, \5\n'. Use "name=value" or "name(n)=value", where n is the number of arguments
+warning: ignoring unsupported tag `MARKDOWN_SUPPORT       =' at line 306, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `AUTOLINK_SUPPORT       =' at line 314, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `GROUP_NESTED_COMPOUNDS =' at line 363, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `EXTRACT_PACKAGE        =' at line 443, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `HIDE_COMPOUND_REFERENCE=' at line 534, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `SHOW_GROUPED_MEMB_INC  =' at line 547, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `WARN_AS_ERROR          =' at line 758, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `USE_MDFILE_AS_MAINPAGE =' at line 977, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `SOURCE_TOOLTIPS        =' at line 1033, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `CLANG_ASSISTED_PARSING =' at line 1074, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `CLANG_OPTIONS          =' at line 1082, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `HTML_EXTRA_STYLESHEET  =' at line 1187, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `HTML_INDEX_NUM_ENTRIES =' at line 1257, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `MATHJAX_FORMAT         =' at line 1538, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `MATHJAX_CODEFILE       =' at line 1566, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_SEARCH        =' at line 1615, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `SEARCHENGINE_URL       =' at line 1626, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `SEARCHDATA_FILE        =' at line 1634, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_SEARCH_ID     =' at line 1642, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `EXTRA_SEARCH_MAPPINGS  =' at line 1652, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `LATEX_EXTRA_STYLESHEET =' at line 1754, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `LATEX_EXTRA_FILES      =' at line 1762, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `LATEX_TIMESTAMP        =' at line 1821, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `RTF_SOURCE_CODE        =' at line 1887, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `MAN_SUBDIR             =' at line 1922, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `GENERATE_DOCBOOK       =' at line 1968, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `DOCBOOK_OUTPUT         =' at line 1976, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `DOCBOOK_PROGRAMLISTING =' at line 1985, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `EXTERNAL_PAGES         =' at line 2159, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `DIA_PATH               =' at line 2194, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `UML_LIMIT_NUM_FIELDS   =' at line 2288, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `DIAFILE_DIRS           =' at line 2406, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `PLANTUML_JAR_PATH      =' at line 2414, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
+warning: ignoring unsupported tag `PLANTUML_INCLUDE_PATH  =' at line 2419, file /home/travis/build/lukasstadler/RAPI/doxygen/Doxyfile
 Searching for include files...
 Searching for example files...
 Searching for images...
@@ -75,10 +48,13 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/info
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/heads
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/03
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/05
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/07
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/09
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/0a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/0c
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/15
@@ -93,6 +69,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2b
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2e
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/35
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/36
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/37
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/39
@@ -103,11 +80,11 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/46
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/49
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/4a
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/51
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/52
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/53
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/5a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/5b
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/5c
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/5f
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/60
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/64
@@ -127,6 +104,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ac
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/af
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b1
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b7
@@ -138,15 +116,14 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d3
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d9
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e2
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e5
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e7
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e9
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ed
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ef
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f8
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f9
@@ -154,6 +131,8 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/pack
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/heads
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/tags
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs/RAPI
