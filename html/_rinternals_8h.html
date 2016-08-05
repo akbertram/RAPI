@@ -567,8 +567,10 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a8cc2c7e17958cf21a7fd2a6f0c2ecfa8">Rf_findFun</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1084be7508a7dcd33b00e42bfb6a21b0">Rf_findFunctionForBody</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> body)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a46c1b39ea2e0ca9e70448918d2ac8467">Rf_findVar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the binding of a symbol in an environment and its enclosing environments.  <a href="#a46c1b39ea2e0ca9e70448918d2ac8467"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#acc06877e3ab109f1c0cf0b0ded985692">Rf_findVarInFrame</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a379f986615c4a03168322276aa20e971">Rf_findVarInFrame3</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> doGet)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the binding for a symbol in a single environment.  <a href="#a379f986615c4a03168322276aa20e971"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2f43d200c3be12bbfeb2bd8cdd2a845c">Rf_getAttrib</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> vec, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> name)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abf808c62f3558ee51edd15faa358f6cd">Rf_GetArrayDimnames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5256c03465a3ab829f88f9db9b80e64a">Rf_GetColNames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> dimnames)</td></tr>
@@ -8946,6 +8948,18 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Find the binding of a symbol in an environment and its enclosing environments. </p>
+<p>This function calls <a class="el" href="_rinternals_8h.html#a379f986615c4a03168322276aa20e971">Rf_findVarInFrame3</a> on the given frame and its enclosing environments, until a binding is found or the empty environment is reached.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">symbol</td><td>the <a class="el" href="_rinternals_8h.html#a682571d5dc761e38829cc143492fa820">SYMSXP</a> that should be looked up </td></tr>
+    <tr><td class="paramname">rho</td><td>an <a class="el" href="_rinternals_8h.html#aee7d13eaafb3901aa3974c14caca7dc5">ENVSXP</a> that is the starting point for the lookup</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns the binding value, or <a class="el" href="_rinternals_8h.html#a5df206fc6c9488d1758d5ad826fbc8f9">R_UnboundValue</a> if none was found.</dd></dl>
+<p>{Can cause GCs if user defined database (IS_USER_DATABASE) or active bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used.} </p>
+
 </div>
 </div>
 <a class="anchor" id="acc06877e3ab109f1c0cf0b0ded985692"></a><!-- doxytag: member="Rinternals.h::Rf_findVarInFrame" ref="acc06877e3ab109f1c0cf0b0ded985692" args="(SEXP rho, SEXP symbol)" -->
@@ -9005,6 +9019,19 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Find the binding for a symbol in a single environment. </p>
+<p>The lookup will query user defined databases if the environment is IS_USER_DATABASE, and query active binding (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>).</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rho</td><td>an <a class="el" href="_rinternals_8h.html#aee7d13eaafb3901aa3974c14caca7dc5">ENVSXP</a> in which the lookup will take place </td></tr>
+    <tr><td class="paramname">symbol</td><td>the <a class="el" href="_rinternals_8h.html#a682571d5dc761e38829cc143492fa820">SYMSXP</a> that should be looked up </td></tr>
+    <tr><td class="paramname">doGet</td><td>specifies if the lookup is done to get the value (TRUE) or only to determine whether there is a binding. If this is FALSE, then <a class="el" href="struct___r___object_table.html#a0fed82a180eae49b1a4ad4e428588e22">R_ObjectTable::exists</a> is called in addition to <a class="el" href="struct___r___object_table.html#a685973228ce436a8f3ba9eef79c0b124">R_ObjectTable::get</a> .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns the binding value, or <a class="el" href="_rinternals_8h.html#a5df206fc6c9488d1758d5ad826fbc8f9">R_UnboundValue</a> if none was found.</dd></dl>
+<p>{Can cause GCs if user defined database (IS_USER_DATABASE) or active bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used.} </p>
 
 </div>
 </div>
@@ -13703,7 +13730,7 @@ Variables</h2></td></tr>
 
 
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 5 2016 11:33:25 for RAPI by &#160;<a href="http://www.doxygen.org/index.html">
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.7.6.1
 </small></address>
