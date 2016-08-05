@@ -805,8 +805,40 @@ Rboolean R_envHasNoSpecialSymbols(SEXP env);
 SEXP Rf_eval(SEXP e, SEXP rho);
 SEXP Rf_findFun(SEXP symbol, SEXP rho);
 void Rf_findFunctionForBody(SEXP body);
+
+/** @brief Find the binding of a symbol in an environment and its enclosing environments.
+ *
+ * This function calls \ref Rf_findVarInFrame3 on the given frame and its enclosing 
+ * environments, until a binding is found or the empty environment is reached.
+ *
+ * @param symbol the \ref SYMSXP that should be looked up
+ * @param rho an \ref ENVSXP that is the starting point for the lookup
+ *
+ * @return Returns the binding value, or \ref R_UnboundValue if none was found.
+ *
+ * @gc if one of the environments is of class "UserDefinedDatabase" or active bindings 
+ * (\ref R_MakeActiveBinding) are used.
+*/
 SEXP Rf_findVar(SEXP symbol, SEXP rho);
 SEXP Rf_findVarInFrame(SEXP rho, SEXP symbol);
+
+/** @brief Find the binding for a symbol in a single environment.
+ *
+ * The lookup will query user defined databases if the environment is of class
+ * "UserDefinedDatabase" (using \ref R_ObjectTable), and query active binding 
+ * (\ref R_MakeActiveBinding).
+ *
+ * @param rho an \ref ENVSXP in which the lookup will take place
+ * @param symbol the \ref SYMSXP that should be looked up
+ * @param doGet specifies if the lookup is done to get the value (TRUE), as opposed to 
+ *     only determining whether there is a binding. The only effect is that, if this is 
+ *     FALSE, \ref R_ObjectTable::exists is called before calling \ref R_ObjectTable::get.
+ *
+ * @return Returns the binding value, or \ref R_UnboundValue if none was found.
+ *
+ * @gc if the environments is of class "UserDefinedDatabase" or active bindings 
+ * (\ref R_MakeActiveBinding) are used.
+*/
 SEXP Rf_findVarInFrame3(SEXP rho, SEXP symbol, Rboolean doGet);
 SEXP Rf_getAttrib(SEXP vec, SEXP name);
 SEXP Rf_GetArrayDimnames(SEXP x);
