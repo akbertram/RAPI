@@ -7,6 +7,7 @@ var searchData=
   ['rconfig_2eh',['Rconfig.h',['../_rconfig_8h.html',1,'']]],
   ['rdefines_2eh',['Rdefines.h',['../_rdefines_8h.html',1,'']]],
   ['rdynload_2eh',['Rdynload.h',['../_rdynload_8h.html',1,'']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['rembedded_2eh',['Rembedded.h',['../_rembedded_8h.html',1,'']]],
   ['riconv_2eh',['Riconv.h',['../_riconv_8h.html',1,'']]],
   ['rinterface_2eh',['Rinterface.h',['../_rinterface_8h.html',1,'']]],

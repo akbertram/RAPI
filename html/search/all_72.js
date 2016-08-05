@@ -374,6 +374,7 @@ var searchData=
   ['rdynload_2eh',['Rdynload.h',['../_rdynload_8h.html',1,'']]],
   ['re',['re',['../struct_s__complex.html#a5a6fce2fc5cae153945fea2c45beeb4f',1,'S_complex']]],
   ['read',['read',['../struct_rconn.html#a977bcdb12ada84f4881a63945cfa8aec',1,'Rconn']]],
+  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['reads3varsfromframe',['readS3VarsFromFrame',['../_rinternals_8h.html#a5b33304188dcbe23689179ae80ecd789',1,'Rinternals.h']]],
   ['real',['REAL',['../_rinternals_8h.html#a62837c8573dfc4e85c798b52a90faccd',1,'Rinternals.h']]],
   ['realloc',['Realloc',['../_r_s_8h.html#a47220fe013dd56d340b53d86ea187f05',1,'RS.h']]],

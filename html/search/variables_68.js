@@ -8,5 +8,6 @@ var searchData=
   ['havetransparency',['haveTransparency',['../struct___dev_desc.html#a20398456bc82929003049515428325c5',1,'_DevDesc']]],
   ['havetransparentbg',['haveTransparentBg',['../struct___dev_desc.html#a959a4801cda0329be735fb9ef285c036',1,'_DevDesc']]],
   ['height',['height',['../struct_quartz_backend__s.html#a89f6abd564014faeff7cd20c340a9c7d',1,'QuartzBackend_s::height()'],['../struct_quartz_parameters__s.html#a89f6abd564014faeff7cd20c340a9c7d',1,'QuartzParameters_s::height()']]],
-  ['holdflush',['holdflush',['../struct___dev_desc.html#a8bda46965c41071417ea7f20b65aa8ea',1,'_DevDesc']]]
+  ['holdflush',['holdflush',['../struct___dev_desc.html#a8bda46965c41071417ea7f20b65aa8ea',1,'_DevDesc']]],
+  ['https',['https',['../_r_e_a_d_m_e_8md.html#ad7d3e14bf41557218c0b22760df97d7d',1,'README.md']]]
 ];

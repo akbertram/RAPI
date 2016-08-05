@@ -266,6 +266,7 @@ var searchData=
   ['dnorm4',['dnorm4',['../_rmath_8h.html#aae532f957e4456c9d7cbbdebd62fae72',1,'Rmath.h']]],
   ['dnrm2',['dnrm2',['../_b_l_a_s_8h.html#a06a35a854c5a15c6b4df45d2682a50a5',1,'BLAS.h']]],
   ['dnt',['dnt',['../_rmath_8h.html#ae63c091468341a9a6cbc191f1562debc',1,'dnt():&#160;Rmath.h'],['../_rmath_8h.html#aea39c2fe61f3d1094b9284baa99e360b',1,'dnt(double, double, double, int):&#160;Rmath.h']]],
+  ['documentation',['documentation',['../_r_e_a_d_m_e_8md.html#a4dd54fdd1c3ae9b55aeb57556bb7968d',1,'README.md']]],
   ['dokeybd',['doKeybd',['../_graphics_device_8h.html#aff3aed8c45664e06d585c5057a4c4c7d',1,'doKeybd():&#160;GraphicsDevice.h'],['../_graphics_device_8h.html#ac74d0f7629d2d82655a2a84b66600b07',1,'doKeybd(pDevDesc dd, R_KeyName rkey, const char *keyname):&#160;GraphicsDevice.h']]],
   ['domouseevent',['doMouseEvent',['../_graphics_device_8h.html#a58bf81a120b83651cf6812d98fa680eb',1,'doMouseEvent():&#160;GraphicsDevice.h'],['../_graphics_device_8h.html#a3f3aa3be983d93f87dabb2c7c90d0738',1,'doMouseEvent(pDevDesc dd, R_MouseEvent event, int buttons, double x, double y):&#160;GraphicsDevice.h']]],
   ['dopgtr',['dopgtr',['../_lapack_8h.html#aca1c4dbd17862f8cb0120ae843a186dc',1,'Lapack.h']]],

@@ -48,11 +48,14 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/info
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/heads
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/logs/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/03
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/05
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/07
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/0a
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/0c
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/15
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/17
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/18
@@ -94,17 +97,20 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/95
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/99
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9d
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9e
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ac
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b0
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b1
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/b7
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ba
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/bd
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/c2
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/c3
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/c4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d3
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d9
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e2
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e6
@@ -112,6 +118,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e9
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ed
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ef
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f8
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f9
@@ -119,6 +126,8 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/pack
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/heads
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/remotes/origin
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/refs/tags
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/code_docs/RAPI
@@ -218,6 +227,8 @@ Preprocessing /home/travis/build/lukasstadler/RAPI/Rconfig.h...
 Parsing file /home/travis/build/lukasstadler/RAPI/Rconfig.h...
 Preprocessing /home/travis/build/lukasstadler/RAPI/Rdefines.h...
 Parsing file /home/travis/build/lukasstadler/RAPI/Rdefines.h...
+Preprocessing /home/travis/build/lukasstadler/RAPI/README.md...
+Parsing file /home/travis/build/lukasstadler/RAPI/README.md...
 Preprocessing /home/travis/build/lukasstadler/RAPI/Rembedded.h...
 Parsing file /home/travis/build/lukasstadler/RAPI/Rembedded.h...
 Preprocessing /home/travis/build/lukasstadler/RAPI/Rinterface.h...
@@ -361,6 +372,7 @@ Generating docs for file R_ext/Utils.h...
 Generating docs for file R_ext/Visibility.h...
 Generating docs for file Rconfig.h...
 Generating docs for file Rdefines.h...
+Generating docs for file README.md...
 Generating docs for file Rembedded.h...
 Generating docs for file Rinterface.h...
 Generating docs for file Rinternals.h...
@@ -506,6 +518,6 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-symbol cache used 2598/65536 hits=188529 misses=2598
-lookup cache used 2516/65536 hits=15827 misses=2531
+symbol cache used 2600/65536 hits=188448 misses=2600
+lookup cache used 2518/65536 hits=15829 misses=2533
 finished...
