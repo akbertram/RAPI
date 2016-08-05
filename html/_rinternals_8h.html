@@ -8958,7 +8958,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns the binding value, or <a class="el" href="_rinternals_8h.html#a5df206fc6c9488d1758d5ad826fbc8f9">R_UnboundValue</a> if none was found.</dd></dl>
-<p>{Can cause GCs if user defined database (IS_USER_DATABASE) or active bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used.} </p>
+<dl class="user"><dt><b>Can cause GCs if one of the environments is of class "UserDefinedDatabase" or</b></dt><dd>active bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used. </dd></dl>
 
 </div>
 </div>
@@ -9021,17 +9021,17 @@ Variables</h2></td></tr>
 <div class="memdoc">
 
 <p>Find the binding for a symbol in a single environment. </p>
-<p>The lookup will query user defined databases if the environment is IS_USER_DATABASE, and query active binding (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>).</p>
+<p>The lookup will query user defined databases if the environment is of class "UserDefinedDatabase" (using <a class="el" href="_callbacks_8h.html#a4365c545d72d297e6846d0ee51c25c08">R_ObjectTable</a>), and query active binding (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>).</p>
 <dl class="params"><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">rho</td><td>an <a class="el" href="_rinternals_8h.html#aee7d13eaafb3901aa3974c14caca7dc5">ENVSXP</a> in which the lookup will take place </td></tr>
     <tr><td class="paramname">symbol</td><td>the <a class="el" href="_rinternals_8h.html#a682571d5dc761e38829cc143492fa820">SYMSXP</a> that should be looked up </td></tr>
-    <tr><td class="paramname">doGet</td><td>specifies if the lookup is done to get the value (TRUE) or only to determine whether there is a binding. If this is FALSE, then <a class="el" href="struct___r___object_table.html#a0fed82a180eae49b1a4ad4e428588e22">R_ObjectTable::exists</a> is called in addition to <a class="el" href="struct___r___object_table.html#a685973228ce436a8f3ba9eef79c0b124">R_ObjectTable::get</a> .</td></tr>
+    <tr><td class="paramname">doGet</td><td>specifies if the lookup is done to get the value (TRUE), as opposed to only determining whether there is a binding. The only effect is that, if this is FALSE, <a class="el" href="struct___r___object_table.html#a0fed82a180eae49b1a4ad4e428588e22">R_ObjectTable::exists</a> is called in addition to <a class="el" href="struct___r___object_table.html#a685973228ce436a8f3ba9eef79c0b124">R_ObjectTable::get</a>.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns the binding value, or <a class="el" href="_rinternals_8h.html#a5df206fc6c9488d1758d5ad826fbc8f9">R_UnboundValue</a> if none was found.</dd></dl>
-<p>{Can cause GCs if user defined database (IS_USER_DATABASE) or active bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used.} </p>
+<dl class="user"><dt><b>Can cause GCs if the environments is of class "UserDefinedDatabase" or active</b></dt><dd>bindings (<a class="el" href="_rinternals_8h.html#a51472dbcf489e2263cc37e43e5769b86">R_MakeActiveBinding</a>) are used. </dd></dl>
 
 </div>
 </div>

@@ -92,6 +92,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/25
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/27
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/28
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/29
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2b
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/2e
@@ -124,7 +125,6 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/94
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/95
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/99
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9d
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/9e
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/a0
@@ -140,7 +140,6 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/c4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d3
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d4
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/d9
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e2
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/e6
@@ -149,7 +148,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ed
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/ef
-Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f0
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f4
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f6
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f8
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/f9
@@ -377,11 +376,6 @@ Generating docs for file R_ext/Connections.h...
 Generating docs for file R_ext/Constants.h...
 Generating docs for file R_ext/Error.h...
 Generating docs for file R_ext/eventloop.h...
-/home/travis/build/lukasstadler/RAPI/Rinternals.h:815: warning: Found unknown command `\gc'
-/home/travis/build/lukasstadler/RAPI/Rinternals.h:815: warning: unable to resolve reference to `IS_USER_DATABASE' for \ref command
-/home/travis/build/lukasstadler/RAPI/Rinternals.h:824: warning: unable to resolve reference to `IS_USER_DATABASE' for \ref command
-/home/travis/build/lukasstadler/RAPI/Rinternals.h:834: warning: Found unknown command `\gc'
-/home/travis/build/lukasstadler/RAPI/Rinternals.h:834: warning: unable to resolve reference to `IS_USER_DATABASE' for \ref command
 Generating docs for file R_ext/GetX11Image.h...
 Generating docs for file R_ext/GraphicsDevice.h...
 Generating docs for file R_ext/GraphicsEngine.h...
@@ -554,6 +548,6 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-symbol cache used 2600/65536 hits=188467 misses=2600
+symbol cache used 2600/65536 hits=188468 misses=2600
 lookup cache used 2518/65536 hits=15831 misses=2533
 finished...
