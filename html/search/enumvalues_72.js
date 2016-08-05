@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['r_5fany_5fsym',['R_ANY_SYM',['../_rdynload_8h.html#a52ffcccfd79ab922bde668de4470ad5da1c62eef86f880b4c6150c60f49f5e98c',1,'Rdynload.h']]],
+  ['r_5farg_5fin',['R_ARG_IN',['../_rdynload_8h.html#a7233ab5735691dae07e478c396d04a22a019d321067aafafc13775e2293ce782e',1,'Rdynload.h']]],
+  ['r_5farg_5fin_5fout',['R_ARG_IN_OUT',['../_rdynload_8h.html#a7233ab5735691dae07e478c396d04a22abe8085442ad7fd97c21c25362dfe8c09',1,'Rdynload.h']]],
+  ['r_5farg_5fout',['R_ARG_OUT',['../_rdynload_8h.html#a7233ab5735691dae07e478c396d04a22ad96038a4f42b9b17ebb71b75f5d92464',1,'Rdynload.h']]],
+  ['r_5fc_5fsym',['R_C_SYM',['../_rdynload_8h.html#a52ffcccfd79ab922bde668de4470ad5dabc9a293d93fc2721fd2745fe7744423e',1,'Rdynload.h']]],
+  ['r_5fcall_5fsym',['R_CALL_SYM',['../_rdynload_8h.html#a52ffcccfd79ab922bde668de4470ad5da4b60ac4637e17716bc9819b138d518ac',1,'Rdynload.h']]],
+  ['r_5fexternal_5fsym',['R_EXTERNAL_SYM',['../_rdynload_8h.html#a52ffcccfd79ab922bde668de4470ad5da6d63ae9d65baeae16fbf6357aa747c8d',1,'Rdynload.h']]],
+  ['r_5ffortran_5fsym',['R_FORTRAN_SYM',['../_rdynload_8h.html#a52ffcccfd79ab922bde668de4470ad5da28e0a50f936f625017708b0aef6fd8d1',1,'Rdynload.h']]],
+  ['r_5firrelevant',['R_IRRELEVANT',['../_rdynload_8h.html#a7233ab5735691dae07e478c396d04a22a93d8f1e8fe7607faf1807de30f7feea4',1,'Rdynload.h']]],
+  ['r_5fpstream_5fany_5fformat',['R_pstream_any_format',['../_rinternals_8h.html#adfe24aef1f292d20e497866aea52873fa760e727d5c046572a9b53fa33667d8eb',1,'Rinternals.h']]],
+  ['r_5fpstream_5fascii_5fformat',['R_pstream_ascii_format',['../_rinternals_8h.html#adfe24aef1f292d20e497866aea52873fae872f7944896b4045a83ca5f8f1d8e04',1,'Rinternals.h']]],
+  ['r_5fpstream_5fasciihex_5fformat',['R_pstream_asciihex_format',['../_rinternals_8h.html#adfe24aef1f292d20e497866aea52873fa714ec7fa7f877c2d654cb230a164342d',1,'Rinternals.h']]],
+  ['r_5fpstream_5fbinary_5fformat',['R_pstream_binary_format',['../_rinternals_8h.html#adfe24aef1f292d20e497866aea52873fa04b6c8142aef6afa546f72e1d001784c',1,'Rinternals.h']]],
+  ['r_5fpstream_5fxdr_5fformat',['R_pstream_xdr_format',['../_rinternals_8h.html#adfe24aef1f292d20e497866aea52873fa0b0b7d828c7ee64440d1e074c05faf77',1,'Rinternals.h']]],
+  ['rdreq',['RDREQ',['../stats__package_8h.html#a430e9e17b2c72b2851f5638c6e7d5e8bab56388e51d0510128168e94c47687c2f',1,'stats_package.h']]],
+  ['rmat',['RMAT',['../stats__package_8h.html#a430e9e17b2c72b2851f5638c6e7d5e8bac70f2ab5910099e66b763dbae55c7738',1,'stats_package.h']]]
+];

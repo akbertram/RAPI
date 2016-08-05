@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_rinternals_8h.html" title="Rinternals.h" alt="" coords="487,83,577,112"/>
+<area shape="rect" id="node11" href="$_arith_8h.html" title="R_ext/Arith.h" alt="" coords="645,160,744,189"/>
+<area shape="rect" id="node13" href="$libextern_8h.html" title="R_ext/libextern.h" alt="" coords="635,237,755,267"/>
+<area shape="rect" id="node17" href="$_boolean_8h.html" title="R_ext/Boolean.h" alt="" coords="347,237,464,267"/>
+<area shape="rect" id="node19" href="$_complex_8h.html" title="R_ext/Complex.h" alt="" coords="488,237,611,267"/>
+<area shape="rect" id="node21" href="$_error_8h.html" title="R_ext/Error.h" alt="" coords="768,160,867,189"/>
+<area shape="rect" id="node23" href="$_memory_8h.html" title="R_ext/Memory.h" alt="" coords="229,160,347,189"/>
+<area shape="rect" id="node26" href="$_utils_8h.html" title="R_ext/Utils.h" alt="" coords="371,160,469,189"/>
+<area shape="rect" id="node31" href="$_print_8h.html" title="R_ext/Print.h" alt="" coords="891,160,989,189"/>
+<area shape="rect" id="node36" href="$_rconfig_8h.html" title="Rconfig.h" alt="" coords="1013,160,1091,189"/>
+</map>

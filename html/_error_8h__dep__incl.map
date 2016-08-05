@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_r_8h.html" title="R.h" alt="" coords="5,160,48,189"/>
+<area shape="rect" id="node5" href="$_r_s_8h.html" title="R_ext/RS.h" alt="" coords="221,83,312,112"/>
+<area shape="rect" id="node23" href="$_rinternals_8h.html" title="Rinternals.h" alt="" coords="551,83,641,112"/>
+<area shape="rect" id="node8" href="$_applic_8h.html" title="R_ext/Applic.h" alt="" coords="11,237,117,267"/>
+<area shape="rect" id="node10" href="$_b_l_a_s_8h.html" title="R_ext/BLAS.h" alt="" coords="123,160,229,189"/>
+<area shape="rect" id="node13" href="$_lapack_8h.html" title="R_ext/Lapack.h" alt="" coords="141,237,256,267"/>
+<area shape="rect" id="node15" href="$_linpack_8h.html" title="R_ext/Linpack.h" alt="" coords="280,237,397,267"/>
+<area shape="rect" id="node19" href="$_rdefines_8h.html" title="Rdefines.h" alt="" coords="421,160,507,189"/>
+<area shape="rect" id="node21" href="$_s_8h.html" title="S.h" alt="" coords="355,160,397,189"/>
+<area shape="rect" id="node25" href="$_callbacks_8h.html" title="R_ext/Callbacks.h" alt="" coords="531,160,661,189"/>
+<area shape="rect" id="node27" href="$_prt_util_8h.html" title="R_ext/PrtUtil.h" alt="" coords="685,160,795,189"/>
+<area shape="rect" id="node29" href="$stats__stubs_8h.html" title="R_ext/stats_stubs.h" alt="" coords="819,160,957,189"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_r_8h.html" title="R.h" alt="" coords="176,83,219,112"/>
+<area shape="rect" id="node5" href="$_rinternals_8h.html" title="Rinternals.h" alt="" coords="243,83,333,112"/>
+<area shape="rect" id="node7" href="$_callbacks_8h.html" title="R_ext/Callbacks.h" alt="" coords="5,160,136,189"/>
+<area shape="rect" id="node9" href="$_prt_util_8h.html" title="R_ext/PrtUtil.h" alt="" coords="160,160,269,189"/>
+<area shape="rect" id="node11" href="$stats__stubs_8h.html" title="R_ext/stats_stubs.h" alt="" coords="293,160,432,189"/>
+<area shape="rect" id="node13" href="$_rdefines_8h.html" title="Rdefines.h" alt="" coords="456,160,541,189"/>
+</map>

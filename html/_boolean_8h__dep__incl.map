@@ -1,0 +1,19 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_r_8h.html" title="R.h" alt="" coords="180,160,223,189"/>
+<area shape="rect" id="node5" href="$_applic_8h.html" title="R_ext/Applic.h" alt="" coords="509,83,616,112"/>
+<area shape="rect" id="node7" href="$_connections_8h.html" title="R_ext/Connections.h" alt="" coords="640,83,784,112"/>
+<area shape="rect" id="node9" href="$_graphics_device_8h.html" title="R_ext/GraphicsDevice.h" alt="" coords="808,83,973,112"/>
+<area shape="rect" id="node13" href="$_random_8h.html" title="R_ext/Random.h" alt="" coords="141,83,261,112"/>
+<area shape="rect" id="node16" href="$_rdynload_8h.html" title="R_ext/Rdynload.h" alt="" coords="409,160,535,189"/>
+<area shape="rect" id="node20" href="$_r_startup_8h.html" title="R_ext/RStartup.h" alt="" coords="1048,83,1171,112"/>
+<area shape="rect" id="node22" href="$_rinterface_8h.html" title="Rinterface.h" alt="" coords="1029,160,1123,189"/>
+<area shape="rect" id="node24" href="$_utils_8h.html" title="R_ext/Utils.h" alt="" coords="285,83,384,112"/>
+<area shape="rect" id="node27" href="$_rinternals_8h.html" title="Rinternals.h" alt="" coords="289,160,380,189"/>
+<area shape="rect" id="node36" href="$_rembedded_8h.html" title="Rembedded.h" alt="" coords="1195,83,1296,112"/>
+<area shape="rect" id="node40" href="$_rmath_8h.html" title="Rmath.h" alt="" coords="1320,83,1392,112"/>
+<area shape="rect" id="node11" href="$_graphics_engine_8h.html" title="R_ext/GraphicsEngine.h" alt="" coords="809,160,972,189"/>
+<area shape="rect" id="node18" href="$stats__stubs_8h.html" title="R_ext/stats_stubs.h" alt="" coords="403,237,541,267"/>
+<area shape="rect" id="node29" href="$_callbacks_8h.html" title="R_ext/Callbacks.h" alt="" coords="5,237,136,267"/>
+<area shape="rect" id="node31" href="$_prt_util_8h.html" title="R_ext/PrtUtil.h" alt="" coords="160,237,269,267"/>
+<area shape="rect" id="node34" href="$_rdefines_8h.html" title="Rdefines.h" alt="" coords="293,237,379,267"/>
+</map>

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['object',['OBJECT',['../_rinternals_8h.html#ac504d4f6b07d5dfd7953eb5949d885d6',1,'Rinternals.h']]],
+  ['objects',['objects',['../struct___r___object_table.html#ae812a46696d55bb4b9becd73fe1496b8',1,'_R_ObjectTable']]],
+  ['oconvbuff',['oconvbuff',['../struct_rconn.html#a6d21bd528d5c75d41c31d33100e8bd77',1,'Rconn']]],
+  ['onattach',['onAttach',['../struct___r___object_table.html#a2708819549dbbc72ca0fe3d1959db90d',1,'_R_ObjectTable']]],
+  ['ondetach',['onDetach',['../struct___r___object_table.html#a4b14afd1a2fa825953e9299b0bc85d52',1,'_R_ObjectTable']]],
+  ['onexit',['onExit',['../struct___dev_desc.html#a4c2d8e29aa6a3335c465c11f8ff4d579',1,'_DevDesc']]],
+  ['onintr',['onintr',['../_rinterface_8h.html#a28f6c5031240767800b9eb01153dacd7',1,'onintr():&#160;Rinterface.h'],['../_rinterface_8h.html#ab51f7fe0f6a654b4125a22bf1a48f190',1,'onintr(void):&#160;Rinterface.h']]],
+  ['onintrnoresume',['onintrNoResume',['../_rinterface_8h.html#a57c4cdb061e15792fab04af7a49e95b5',1,'onintrNoResume():&#160;Rinterface.h'],['../_rinterface_8h.html#a5a8ee561afd808fcb335828f2bc76c6c',1,'onintrNoResume(void):&#160;Rinterface.h']]],
+  ['open',['open',['../struct_rconn.html#af76c10b67652f65a3bec0aa75a53d720',1,'Rconn']]],
+  ['opt',['OPT',['../stats__package_8h.html#a5d2559f81e8e4cb87f80f0ed93ade682afbd0f14f73cfbbf6b15ca1b4418a6209',1,'stats_package.h']]],
+  ['optif9',['optif9',['../_applic_8h.html#a02e9bb4d4e18948f6460aa2343209f18',1,'Applic.h']]],
+  ['optimfn',['optimfn',['../_applic_8h.html#abd44be5e8ba14b216d837d95a9832832',1,'Applic.h']]],
+  ['optimgr',['optimgr',['../_applic_8h.html#ad754d359c1eda5b0c77f6e550ff853a3',1,'Applic.h']]],
+  ['outbytes',['OutBytes',['../struct_r__outpstream__st.html#a249fca6ec1fca82e9589ed487b3d64e7',1,'R_outpstream_st']]],
+  ['outchar',['OutChar',['../struct_r__outpstream__st.html#ad5d0c0af6c3d5730d8f02e6996c56e24',1,'R_outpstream_st']]],
+  ['outconv',['outconv',['../struct_rconn.html#a0986b12f58137f824a7288f884a3347a',1,'Rconn']]],
+  ['outlev',['OUTLEV',['../stats__package_8h.html#a430e9e17b2c72b2851f5638c6e7d5e8babf348f049d8c9e3747363965339721a7',1,'stats_package.h']]],
+  ['outpersisthookdata',['OutPersistHookData',['../struct_r__outpstream__st.html#ae9cd0ccc30c0faf8b16b711f951f637c',1,'R_outpstream_st']]],
+  ['outpersisthookfunc',['OutPersistHookFunc',['../struct_r__outpstream__st.html#a33115cea444383c44684e0bb22bf81fa',1,'R_outpstream_st']]]
+];

@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['par',['par',['../struct_quartz_backend__s.html#adb71456494ac18446cf187cc968be05d',1,'QuartzBackend_s']]],
+  ['pard1',['pard1',['../struct_quartz_parameters__s.html#a281f87f6993f6f0f3acbf70b40db20ff',1,'QuartzParameters_s']]],
+  ['pard2',['pard2',['../struct_quartz_parameters__s.html#a111a6cd870b206073dd7b257e2440619',1,'QuartzParameters_s']]],
+  ['pari1',['pari1',['../struct_quartz_parameters__s.html#ac597d4e04c7a56cc544d85a3a3243b0d',1,'QuartzParameters_s']]],
+  ['pari2',['pari2',['../struct_quartz_parameters__s.html#a4aa486dc4f29b107795eaf95b2e193ed',1,'QuartzParameters_s']]],
+  ['pars1',['pars1',['../struct_quartz_parameters__s.html#af9f01edde2461ec6e82e15c8008a9f65',1,'QuartzParameters_s']]],
+  ['pars2',['pars2',['../struct_quartz_parameters__s.html#a17548600809c49f794dbce2e3ce303fe',1,'QuartzParameters_s']]],
+  ['parv',['parv',['../struct_quartz_parameters__s.html#a1f4a3ad095c370aa380959aa3e204593',1,'QuartzParameters_s']]],
+  ['path',['path',['../struct___dev_desc.html#a95f07bc62cb999261cf9e9e308bc6ead',1,'_DevDesc']]],
+  ['pointsize',['pointsize',['../struct_quartz_backend__s.html#aa91a61daebfcee54d5d128a4e47b2c4a',1,'QuartzBackend_s::pointsize()'],['../struct_quartz_parameters__s.html#aa91a61daebfcee54d5d128a4e47b2c4a',1,'QuartzParameters_s::pointsize()']]],
+  ['polygon',['polygon',['../struct___dev_desc.html#ad73a3615f0a72d2d72ca767f1a0f496d',1,'_DevDesc']]],
+  ['polyline',['polyline',['../struct___dev_desc.html#a98a99d6d7e273f2965f5364f5fde2cc3',1,'_DevDesc']]],
+  ['pospushback',['posPushBack',['../struct_rconn.html#ab917ebbbe54f47b5515939801f4b1a7e',1,'Rconn']]],
+  ['ppsize',['ppsize',['../structstruct_rstart.html#a5d8fda2673910933b227a9f617d7651f',1,'structRstart']]],
+  ['private',['private',['../struct_rconn.html#ad8cc6e120962b4548e2f7d116c4ed560',1,'Rconn']]],
+  ['privatedata',['privateData',['../struct___r___object_table.html#aead157e7a196c11bca45b03d5bb8625a',1,'_R_ObjectTable']]],
+  ['ps',['ps',['../struct_r___g_e__gcontext.html#a2b58822b2dc20f33784218fa3dd7f7e5',1,'R_GE_gcontext']]],
+  ['ptr_5fquartzbackend',['ptr_QuartzBackend',['../_quartz_device_8h.html#af759c40b918aa08c745b6cbd5b089a65',1,'QuartzDevice.h']]],
+  ['pushback',['PushBack',['../struct_rconn.html#a00e76fe07fc4508bbfe21c550aa4ee8e',1,'Rconn']]]
+];

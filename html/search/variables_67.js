@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['gamma',['gamma',['../struct___dev_desc.html#a72f9e01745b3a8203067ab84aefc9aea',1,'_DevDesc::gamma()'],['../struct_r___g_e__gcontext.html#a72f9e01745b3a8203067ab84aefc9aea',1,'R_GE_gcontext::gamma()']]],
+  ['gesd',['gesd',['../struct___g_e_dev_desc.html#abd5871ad5f2e112aef191b69912ec258',1,'_GEDevDesc']]],
+  ['get',['get',['../struct___r___object_table.html#a685973228ce436a8f3ba9eef79c0b124',1,'_R_ObjectTable']]],
+  ['getantialias',['GetAntialias',['../struct_quartz_functons__s.html#abba0c64bb39a072e9583724c95953241',1,'QuartzFunctons_s']]],
+  ['getbackground',['GetBackground',['../struct_quartz_functons__s.html#acc4b8ca1bf4dc2c70b253ea07712aac9',1,'QuartzFunctons_s']]],
+  ['getcgcontext',['getCGContext',['../struct_quartz_backend__s.html#ad66e280dc5ef5f059bf23585b63d6b0c',1,'QuartzBackend_s']]],
+  ['getdirty',['GetDirty',['../struct_quartz_functons__s.html#a3ee8f510f25e20a7dbd5ae2264ab4985',1,'QuartzFunctons_s']]],
+  ['getevent',['getEvent',['../struct___dev_desc.html#aa5810c258f8f945668ffe9ff2a0f5c63',1,'_DevDesc']]],
+  ['getheight',['GetHeight',['../struct_quartz_functons__s.html#a3a84a8f0dd05f10395253b196af7a5fb',1,'QuartzFunctons_s']]],
+  ['getparameter',['GetParameter',['../struct_quartz_functons__s.html#ac6cb282a6c4e68d54fe68bd00ac93ffd',1,'QuartzFunctons_s']]],
+  ['getpointsize',['GetPointSize',['../struct_quartz_functons__s.html#a503fd9aa8a1b043676b921a29bd44924',1,'QuartzFunctons_s']]],
+  ['getscaledheight',['GetScaledHeight',['../struct_quartz_functons__s.html#a6afbaa619a74e0896d68a392fafecea8',1,'QuartzFunctons_s']]],
+  ['getscaledwidth',['GetScaledWidth',['../struct_quartz_functons__s.html#aa4f8589528d2bb5ae6c9aceeee1e4b74',1,'QuartzFunctons_s']]],
+  ['getsnapshot',['GetSnapshot',['../struct_quartz_functons__s.html#ae1a766ecaf6550568991ccc81e29fcfd',1,'QuartzFunctons_s']]],
+  ['gettextscale',['GetTextScale',['../struct_quartz_functons__s.html#ac124ab0d1a3b142af458ae831f92af4c',1,'QuartzFunctons_s']]],
+  ['gettingevent',['gettingEvent',['../struct___dev_desc.html#a8641bc6a501c2901c632d9f4f32e88bc',1,'_DevDesc']]],
+  ['getwidth',['GetWidth',['../struct_quartz_functons__s.html#a473aa75e6caacc8fd3d5b09622fbbf7e',1,'QuartzFunctons_s']]],
+  ['getxscale',['GetXScale',['../struct_quartz_functons__s.html#a2fbed66883967b455feee4a23a41c1a9',1,'QuartzFunctons_s']]],
+  ['getyscale',['GetYScale',['../struct_quartz_functons__s.html#ab5ae728e745794c78d4d37a2d444e8fb',1,'QuartzFunctons_s']]]
+];
