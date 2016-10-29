@@ -63,6 +63,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/1c
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/20
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/21
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/24
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/25
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/27
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/28
@@ -89,6 +90,7 @@ Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objec
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/60
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/64
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/65
+Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/6e
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/6f
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/7a
 Searching for files in directory /home/travis/build/lukasstadler/RAPI/.git/objects/80
@@ -345,7 +347,50 @@ Generating docs for file R_ext/Applic.h...
 Generating docs for file R_ext/Arith.h...
 Generating docs for file R_ext/BLAS.h...
 Generating docs for file R_ext/Boolean.h...
-Generating docs for file R_ext/Callbacks.h...
+Generating doc/home/travis/build/lukasstadler/RAPI/Rinternals.h:2198: warning: argument 'stype' of command @param is not found in the argument list of Rf_allocVector(SEXPTYPE, R_xlen_t)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:2198: warning: argument 'length' of command @param is not found in the argument list of Rf_allocVector(SEXPTYPE, R_xlen_t)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1331: warning: argument 'cr' of command @param is not found in the argument list of Rf_cons(SEXP car, SEXP cdr)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1331: warning: argument 'tl' of command @param is not found in the argument list of Rf_cons(SEXP car, SEXP cdr)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1331: warning: The following parameters of Rf_cons(SEXP car, SEXP cdr) are not documented:
+  parameter 'car'
+  parameter 'cdr'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:2233: warning: argument 's' of command @param is not found in the argument list of Rf_isVector(SEXP)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:2254: warning: argument 'cr' of command @param is not found in the argument list of Rf_lcons(SEXP, SEXP)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:2254: warning: argument 'tl' of command @param is not found in the argument list of Rf_lcons(SEXP, SEXP)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1482: warning: argument 'str' of command @param is not found in the argument list of Rf_mkChar(const char *name)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1482: warning: The following parameters of Rf_mkChar(const char *name) are not documented:
+  parameter 'name'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1681: warning: argument 'str' of command @param is not found in the argument list of Rf_mkCharCE(const char *name, cetype_t enc)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1681: warning: argument 'encoding' of command @param is not found in the argument list of Rf_mkCharCE(const char *name, cetype_t enc)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1681: warning: The following parameters of Rf_mkCharCE(const char *name, cetype_t enc) are not documented:
+  parameter 'name'
+  parameter 'enc'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1496: warning: argument 'text' of command @param is not found in the argument list of Rf_mkCharLen(const char *name, int len)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1496: warning: argument 'length' of command @param is not found in the argument list of Rf_mkCharLen(const char *name, int len)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1496: warning: The following parameters of Rf_mkCharLen(const char *name, int len) are not documented:
+  parameter 'name'
+  parameter 'len'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1698: warning: argument 'text' of command @param is not found in the argument list of Rf_mkCharLenCE(const char *name, int len, cetype_t enc)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1698: warning: argument 'length' of command @param is not found in the argument list of Rf_mkCharLenCE(const char *name, int len, cetype_t enc)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1698: warning: argument 'encoding' of command @param is not found in the argument list of Rf_mkCharLenCE(const char *name, int len, cetype_t enc)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1698: warning: The following parameters of Rf_mkCharLenCE(const char *name, int len, cetype_t enc) are not documented:
+  parameter 'name'
+  parameter 'len'
+  parameter 'enc'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1582: warning: argument 'st' of command @param is not found in the argument list of Rf_type2char(SEXPTYPE t)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1582: warning: The following parameters of Rf_type2char(SEXPTYPE t) are not documented:
+  parameter 't'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1609: warning: argument 'node' of command @param is not found in the argument list of Rf_unprotect_ptr(SEXP s)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1609: warning: The following parameters of Rf_unprotect_ptr(SEXP s) are not documented:
+  parameter 's'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1063: warning: argument 'val' of command @param is not found in the argument list of SET_SYMVALUE(SEXP x, SEXP v)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:1063: warning: The following parameters of SET_SYMVALUE(SEXP x, SEXP v) are not documented:
+  parameter 'v'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:934: warning: argument 'x' of command @param is not found in the argument list of SETCAD4R(SEXP e, SEXP y)
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:934: warning: The following parameters of SETCAD4R(SEXP e, SEXP y) are not documented:
+  parameter 'e'
+/home/travis/build/lukasstadler/RAPI/Rinternals.h:903: warning: End of list marker found without any preceding list items
+s for file R_ext/Callbacks.h...
 Generating docs for file R_ext/Complex.h...
 Generating docs for file R_ext/Connections.h...
 Generating docs for file R_ext/Constants.h...
@@ -385,6 +430,7 @@ Generating docs for file Rmath.h...
 Generating docs for file Rversion.h...
 Generating docs for file S.h...
 Generating page documentation...
+Generating docs for page todo...
 Generating group documentation...
 Generating class documentation...
 Generating docs for compound _DevDesc...
@@ -523,6 +569,6 @@ Patching output file 40/43
 Patching output file 41/43
 Patching output file 42/43
 Patching output file 43/43
-symbol cache used 2600/65536 hits=188468 misses=2600
-lookup cache used 2518/65536 hits=15831 misses=2533
+symbol cache used 2600/65536 hits=188526 misses=2600
+lookup cache used 2518/65536 hits=15833 misses=2533
 finished...

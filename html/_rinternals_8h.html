@@ -47,6 +47,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -411,28 +412,41 @@ Enumerations</h2></td></tr>
 <tr><td colspan="2"><h2><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#acfa2c5924d3dc7df259bfa3f3ff5f42f">R_CHAR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the content of CHARSXP as a C-style string.  <a href="#acfa2c5924d3dc7df259bfa3f3ff5f42f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#adc67dff51cba59c0046efb229bc24ab1">Rf_isNull</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this the null value?  <a href="#adc67dff51cba59c0046efb229bc24ab1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac1092e5d75a9a82d4e5a71d6879eb900">Rf_isSymbol</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if an R value is a symbol.  <a href="#ac1092e5d75a9a82d4e5a71d6879eb900"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad40141c3b22cb1368875c2b7acb976f1">Rf_isLogical</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aca1c33262719fa00f6ab7b9328e29d8d">Rf_isReal</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a63fe1919c5f52686004e6ee56a57bd71">Rf_isComplex</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad595ea336528d1a1db32a36df951433e">Rf_isExpression</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a661f16f0d8593208eb8db6fb4d1faf49">Rf_isEnvironment</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this an environment?  <a href="#a661f16f0d8593208eb8db6fb4d1faf49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa46b54d700f2c05b4ccafc9b386c0e6a">Rf_isString</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5a8627d24840febfc82fdcb93479012f">Rf_isObject</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Does an object have a class attribute?  <a href="#a5a8627d24840febfc82fdcb93479012f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a8c8c6bee2e52c101d22c1d3ca210583b">ATTRIB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the attributes of an R value.  <a href="#a8c8c6bee2e52c101d22c1d3ca210583b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac504d4f6b07d5dfd7953eb5949d885d6">OBJECT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Does an value have a class attribute?  <a href="#ac504d4f6b07d5dfd7953eb5949d885d6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ab45f841762f4194ff50a128a548e2bb4">MARK</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2b614b197ea425bd9173a4837289bce9">TYPEOF</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object's SEXPTYPE.  <a href="#a2b614b197ea425bd9173a4837289bce9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5dc88c8588911faedc029667b6317565">NAMED</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get object copying status.  <a href="#a5dc88c8588911faedc029667b6317565"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abd138348bb2dd587ac9419ba2ec1511c">REFCNT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad2b40c982cec1279bdd7192afbe2ee06">SET_OBJECT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1439ea24b4cd1adee16e0f679d354d1e">SET_TYPEOF</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a292394a2707efd29392109c386310f70">SET_NAMED</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set object copying status.  <a href="#a292394a2707efd29392109c386310f70"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5c73d55a1288c49eeda433378ea2826b">SET_ATTRIB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace an object's attributes.  <a href="#a5c73d55a1288c49eeda433378ea2826b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a26b78b96abfafe808e779e95f4943c13">DUPLICATE_ATTRIB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> to, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> from)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the attributes of <em>to</em> by those of <em>from</em>.  <a href="#a26b78b96abfafe808e779e95f4943c13"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a45578dfab103135ce9ff03ce7a6c7ae8">SHALLOW_DUPLICATE_ATTRIB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> to, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> from)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a64f080665a0b50133f88ca5021793c55">IS_S4_OBJECT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this an S4 object?  <a href="#a64f080665a0b50133f88ca5021793c55"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1263d0614ed3c58be6d9b90e173dcc1f">SET_S4_OBJECT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a355d4c8818f0a72f4aae956a40fe6e04">UNSET_S4_OBJECT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a35a2f87f94b3ac7c8d0d8416da6ea3c0">LENGTH</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
@@ -450,55 +464,92 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">double *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a62837c8573dfc4e85c798b52a90faccd">REAL</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_rcomplex.html">Rcomplex</a> *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abab3f0a638f93d6db75602eec1bc6dcb">COMPLEX</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a75000803accc72c5cd2ac098b5834d88">STRING_ELT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a> i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine element of a character vector.  <a href="#a75000803accc72c5cd2ac098b5834d88"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a4c69dd790f050d37a18379e6e6f0e228">VECTOR_ELT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a> i)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Examine element of a list.  <a href="#a4c69dd790f050d37a18379e6e6f0e228"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a39b599a5fd0132157da3b4a720bb6bdc">SET_STRING_ELT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a> i, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set element of character vector.  <a href="#a39b599a5fd0132157da3b4a720bb6bdc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a49f2db4ec2a23d426ef64c1e7cc7ad32">SET_VECTOR_ELT</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a> i, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set element of list.  <a href="#a49f2db4ec2a23d426ef64c1e7cc7ad32"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ada60e1e3fde4d66473a1c9a086e36138">STRING_PTR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *<a class="el" href="_rinterface_8h.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a526828de2d3856a8a7ef3e5831ddb7e6">VECTOR_PTR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#ab51d3ea58a092f8c90f8c07c0fcd10b6">R_len_t</a> <a class="el" href="_rinterface_8h.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5a04933ff98889c666830e8c63eb1b6e">R_BadLongVector</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, const char *, int)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a813527ca387abda54dbb2cbf9e8c4679">TAG</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tag of pairlist element.  <a href="#a813527ca387abda54dbb2cbf9e8c4679"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a09c3ff3d2cfaac84904d2a06435791dd">CAR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get car of pairlist element.  <a href="#a09c3ff3d2cfaac84904d2a06435791dd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a447285a642d7f6e330ebc47d3698c24c">CDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get tail of pairlist element.  <a href="#a447285a642d7f6e330ebc47d3698c24c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac705c0aa1c4f8d2d81894e1abaf4f27c">CAAR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CAR(CAR(e)).  <a href="#ac705c0aa1c4f8d2d81894e1abaf4f27c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a10eec18260f0daf7f6afaeb2c2d8200d">CDAR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CDR(CAR(e)).  <a href="#a10eec18260f0daf7f6afaeb2c2d8200d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a813f22c7acfbe3bd901beae825dc82f3">CADR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CAR(CDR(e)).  <a href="#a813f22c7acfbe3bd901beae825dc82f3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a93a21f77074456f85343539cffb27937">CDDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CDR(CDR(e)).  <a href="#a93a21f77074456f85343539cffb27937"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ab1037f3c3b27d29f0811965bcd41c6e9">CDDDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CDR(CDR(CDR(e))).  <a href="#ab1037f3c3b27d29f0811965bcd41c6e9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1fce21f676b68787c62a6934d7fb863b">CADDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CAR(CDR(CDR(e))).  <a href="#a1fce21f676b68787c62a6934d7fb863b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5d7fa56865e929aae60cc379ca5195f9">CADDDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CAR(CDR(CDR(CDR(e)))).  <a href="#a5d7fa56865e929aae60cc379ca5195f9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aacd1cf0ad85944f9a3226e9685ba2ba7">CAD4R</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Equivalent to CAR(CDR(CDR(CDR(CDR(e))))).  <a href="#aacd1cf0ad85944f9a3226e9685ba2ba7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a09fff71c23e604efbd6fd897852be2b1">MISSING</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1e5b5608cddd957c750128989886a9b1">SET_MISSING</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a62c12d2248da381f7ccbdea80a2a6625">SET_TAG</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the tag of a pairlist element.  <a href="#a62c12d2248da381f7ccbdea80a2a6625"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a4acfcac1ee06a9063e8a1c04ed06fdb9">SETCAR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'car' value of a pairlist element.  <a href="#a4acfcac1ee06a9063e8a1c04ed06fdb9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a3e12f01b383fdba1a988ae1a87d825b7">SETCDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the tail of a pairlist element.  <a href="#a3e12f01b383fdba1a988ae1a87d825b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a4263b47b35646317f48de60f183637e3">SETCADR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'car' value of the second element of list.  <a href="#a4263b47b35646317f48de60f183637e3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a0c68a3088d153515696335af10320e60">SETCADDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'car' value of the third element of list.  <a href="#a0c68a3088d153515696335af10320e60"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a88d6216de675763778b6274ba77837a1">SETCADDDR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'car' value of the fourth element of list.  <a href="#a88d6216de675763778b6274ba77837a1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#adf8e8a70a1b2c0bf32df3a1c8734ec5f">SETCAD4R</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> y)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the 'car' value of the fifth element of list.  <a href="#adf8e8a70a1b2c0bf32df3a1c8734ec5f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a100a94e5788e9b7f391d78fffab10e22">CONS_NR</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> a, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> b)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a231a2c8684bc0d3f7224b31d5e551853">FORMALS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access formal arguments of a closure.  <a href="#a231a2c8684bc0d3f7224b31d5e551853"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a18e86e62b0601eac2bf86870a8a0a7da">BODY</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the body of a closure.  <a href="#a18e86e62b0601eac2bf86870a8a0a7da"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad18f3691da7aaa8e8fb8c8a0ee3ddfee">CLOENV</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the environment of a closure.  <a href="#ad18f3691da7aaa8e8fb8c8a0ee3ddfee"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#afde3475d0c14d7d51fc5c5e6ee258cb1">RDEBUG</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Query debugging status.  <a href="#afde3475d0c14d7d51fc5c5e6ee258cb1"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a9e9c47d87b6e28b6ab91917a7e98e5b3">RSTEP</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2ccc2ed0c5a03ca08968cd3e7019f587">RTRACE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get function tracing status.  <a href="#a2ccc2ed0c5a03ca08968cd3e7019f587"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a43e86ff6ce8973632c939a62ba528e38">SET_RDEBUG</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#afa5c360d4ca1b6cc3abcff82ab396fb3">SET_RSTEP</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac7c79a07e2fc13c405da748c2e1bffd0">SET_RTRACE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set function tracing status.  <a href="#ac7c79a07e2fc13c405da748c2e1bffd0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a25c091c2af931c129f824af6fe809724">SET_FORMALS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad3759c558c26ec67ccb50c2c20be675a">SET_BODY</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a473b9b087f4c661c9a5799b7a7292672">SET_CLOENV</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace the environment of a closure.  <a href="#a473b9b087f4c661c9a5799b7a7292672"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a846286910a8f1a4df3ba7032e212bb9a">PRINTNAME</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbol name.  <a href="#a846286910a8f1a4df3ba7032e212bb9a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a9e86bd6a56d70f49b3a05f4e9cfafd6c">SYMVALUE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Symbol's value in the base environment.  <a href="#a9e86bd6a56d70f49b3a05f4e9cfafd6c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a116976dc916aceb72a1b4a9d796a26a5">INTERNAL</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get function accessed via <code>.Internal()</code>.  <a href="#a116976dc916aceb72a1b4a9d796a26a5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aade9e593bcbc1e8d996f1bb022b84f29">DDVAL</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Does symbol relate to a <code>...</code> expression?  <a href="#aade9e593bcbc1e8d996f1bb022b84f29"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#afc259917ace386848afac8c1fbbe1a7c">SET_DDVAL</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aaa4eba77d1dd6727bd49fd7bac7dba3c">SET_PRINTNAME</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a57cddf6634029de0ce2b571ded8312e8">SET_SYMVALUE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set symbol's value in the base environment.  <a href="#a57cddf6634029de0ce2b571ded8312e8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2bbb1545f8e38466f409d9ba9e0e6dd5">SET_INTERNAL</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Associate a Symbol with a <code>.Internal()</code> function.  <a href="#a2bbb1545f8e38466f409d9ba9e0e6dd5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2e20a49e99afcfea1e752a07501df263">FRAME</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access an environment's Frame, represented as a pairlist.  <a href="#a2e20a49e99afcfea1e752a07501df263"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a249c3631888958ab5d69315ccc483a66">ENCLOS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access enclosing environment.  <a href="#a249c3631888958ab5d69315ccc483a66"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a358f2f2f3b0434d01eecf1e39f85d19d">HASHTAB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a83b777c5cd5e00670f3b63b6fe3b260a">ENVFLAGS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a9761501bb270758fa626f8a8054ce412">SET_ENVFLAGS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
@@ -506,12 +557,16 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a32a0b970e1312c45c6c58f456dfc4838">SET_ENCLOS</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a79d4b7493ae0bf28b7252a08f5512ead">SET_HASHTAB</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a93935bbeb10196c8181bc9346c5f7bb6">PRCODE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the expression of a promise.  <a href="#a93935bbeb10196c8181bc9346c5f7bb6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abd90dc58267dad93868b1766c6f1ec51">PRENV</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the environment of a promise.  <a href="#abd90dc58267dad93868b1766c6f1ec51"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a79aaa1de1ffad5409a8130395602a15c">PRVALUE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the value of a promise.  <a href="#a79aaa1de1ffad5409a8130395602a15c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#acdd14fd6ebf65090b503e5495e07b834">PRSEEN</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6d3b2822f2597921ded1fd094012ba8f">SET_PRSEEN</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, int v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6ecb9f58d3d7d64f0f0ecf0f22cfd8b1">SET_PRENV</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a236e1ee4a1c2cb6921ba4aeebe15aa7b">SET_PRVALUE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of a promise.  <a href="#a236e1ee4a1c2cb6921ba4aeebe15aa7b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad5fb1bb2fd38254734426537c9013886">SET_PRCODE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> v)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a74e2c816cc2041cef0cb3c38d64f8bf9">HASHASH</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int()&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a72c8c232d1dd8f3e1ade446d1ce77f86">HASHVALUE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
@@ -539,8 +594,11 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aab077dbcd1b331b65082e4a752489db7">Rf_allocFormalsList6</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym1, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym2, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym3, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym4, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym5, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> sym6)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6c75060247fda122889ace183b97720b">Rf_allocMatrix</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> mode, int nrow, int ncol)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a477e7f94ae6f7e28328d8c3840119177">Rf_allocList</a> (int n)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pairlist of a specified length.  <a href="#a477e7f94ae6f7e28328d8c3840119177"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6485713c5028a633cb50663c96f68e65">Rf_allocS4Object</a> (void)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an S4 object.  <a href="#a6485713c5028a633cb50663c96f68e65"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6b3e58b3b4f92c10e08bfcdb548519cf">Rf_allocSExp</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> t)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an object of a type derived from pairlist element.  <a href="#a6b3e58b3b4f92c10e08bfcdb548519cf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#adf3040a7271ded3e86df884df508ca3b">Rf_allocVector3</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> type, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a> <a class="el" href="_rinternals_8h.html#a58c1cb56a392e72402ca2384bab50361">length</a>, <a class="el" href="_rallocators_8h.html#a99c0fcb8e91682f1901fd6234eeebccd">R_allocator_t</a> *allocator)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a55214c2e3dcd82022d87f7abb0a8ea35">Rf_any_duplicated</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> from_last)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a3541a1795732337a0682eaa0b28ca5b9">Rf_any_duplicated3</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> incomp, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> from_last)</td></tr>
@@ -548,9 +606,11 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a02d65501d2422a8556b9dc5c4476128e">Rf_arraySubscript</a> (int dim, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> dims, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>(*)(<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> dng), <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>(*)(<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, int strg), <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a637e3b864a8fa13777e15a9008e833a2">Rf_classgets</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> vec, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> klass)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a8ef1cd6a83dd74dff98e87884ec193a0">Rf_cons</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> car, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> cdr)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a pairlist with a specified car and tail.  <a href="#a8ef1cd6a83dd74dff98e87884ec193a0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#af4a98e5d336d5dca6fbeeb06abf5ac47">Rf_copyMatrix</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> t, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> byrow)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad888cef1ad8a814f0f04c27fb20b955d">Rf_copyListMatrix</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> t, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> byrow)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa8657876d8bab4aa84918f8c25bc878d">Rf_copyMostAttrib</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> inp, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> ans)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy attributes, with some exceptions.  <a href="#aa8657876d8bab4aa84918f8c25bc878d"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aac54f14910bfdb3cc8fc7da48fff261f">Rf_copyVector</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a44d572ca19b0839d0adc00a635b9305c">Rf_countContexts</a> (int ctxttype, int browser)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#adc38919bc240fc6a10cfee99ed009885">Rf_CreateTag</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
@@ -564,6 +624,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa73eac3174b3884c49e716a1be954080">Rf_duplicated</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> from_last)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aab32aa775d6569003012f618396f0f18">R_envHasNoSpecialSymbols</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> env)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1fdd7b7ae5eaaccce993ad6dce5fff56">Rf_eval</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate an object in a specified Environment.  <a href="#a1fdd7b7ae5eaaccce993ad6dce5fff56"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a8cc2c7e17958cf21a7fd2a6f0c2ecfa8">Rf_findFun</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a1084be7508a7dcd33b00e42bfb6a21b0">Rf_findFunctionForBody</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> body)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a46c1b39ea2e0ca9e70448918d2ac8467">Rf_findVar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
@@ -572,6 +633,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a379f986615c4a03168322276aa20e971">Rf_findVarInFrame3</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> doGet)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the binding for a symbol in a single environment.  <a href="#a379f986615c4a03168322276aa20e971"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a2f43d200c3be12bbfeb2bd8cdd2a845c">Rf_getAttrib</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> vec, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a named attribute.  <a href="#a2f43d200c3be12bbfeb2bd8cdd2a845c"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abf808c62f3558ee51edd15faa358f6cd">Rf_GetArrayDimnames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5256c03465a3ab829f88f9db9b80e64a">Rf_GetColNames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> dimnames)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad03f60a6a23b14418411cdfd973c0edd">Rf_GetMatrixDimnames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *rl, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *cl, const char **rn, const char **cn)</td></tr>
@@ -582,6 +644,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a4a14047ac1c220a859cefb2b09bdbd80">Rf_GetRowNames</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> dimnames)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6f45f72a1528d41de67d7de647c4d44f">Rf_gsetVar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> value, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#acc4ac0fc1fbf2e3db8900b8677cdd74e">Rf_install</a> (const char *name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a regular Symbol object.  <a href="#acc4ac0fc1fbf2e3db8900b8677cdd74e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad19d7efc89640458d15eb09397f7fe08">Rf_installChar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> charSXP)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5fa180d20d0df257162527c57eb9ebe0">Rf_installDDVAL</a> (int i)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa69b8129b560e5a41ee2c24c3fc94c60">Rf_installS3Signature</a> (const char *, const char *)</td></tr>
@@ -598,7 +661,9 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a07b42167b585fad11cd37ac9518308ec">Rf_matchE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> itable, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> ix, int nmatch, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> env)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a81733b90899790ab167a79dabc756e73">Rf_namesgets</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> vec, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> val)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae3106b6b67f58e57ea85b77beff7371b">Rf_mkChar</a> (const char *name)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a CHARSXP object.  <a href="#ae3106b6b67f58e57ea85b77beff7371b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#acb91f1e58839dfa2dba233d66888ac06">Rf_mkCharLen</a> (const char *name, int len)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a CHARSXP object for specified text.  <a href="#acb91f1e58839dfa2dba233d66888ac06"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a85a869210768efcd529fb647f2c1eb1c">Rf_NonNullStringMatch</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5f723f5aaad71f770cb2fc0fdeeb902e">Rf_ncols</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abfc4c701ea94595282ff2087d8b1871b">Rf_nrows</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
@@ -609,6 +674,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aced4d51cad2ae583c0a5a1e15eace6b3">Rf_PrintValue</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a76891e061871b0d72bda717e0045cddb">Rf_readS3VarsFromFrame</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad75ef29523bf07c68bc045ccd81f9e9b">Rf_setAttrib</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> vec, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> name, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> val)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set or remove a named attribute.  <a href="#ad75ef29523bf07c68bc045ccd81f9e9b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6144ef45160b8680a4e19f2e40eb5617">Rf_setSVector</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> *vec, int len, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> val)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a7787ff766653458ee892a665a698768e">Rf_setVar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> symbol, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> value, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a47d10e92f0b4fb2a35934d1d16bc1fe0">Rf_stringSuffix</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> string, int fromIndex)</td></tr>
@@ -618,11 +684,14 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a69f6fdc44b77e950a758aea8849dfcd9">Rf_translateChar</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac69419a18e1da9d276ee245a9041ac59">Rf_translateChar0</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5c7188e8d69fe13761675482394b4156">Rf_translateCharUTF8</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert contents of a CHARSXP to UTF8.  <a href="#a5c7188e8d69fe13761675482394b4156"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a0cd5308dd919b022287d6938dcbe2ced">Rf_type2char</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> t)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of type within R.  <a href="#a0cd5308dd919b022287d6938dcbe2ced"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae20831afd0b353fd5066e19fb68b2e16">Rf_type2rstr</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a7b3a0bd8f71afe0b25efc43129e0e145">Rf_type2str</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae476d6f32e13f31596a5288e05ad9322">Rf_type2str_nowarn</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a> t)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a82fcb29fac2a0133a315c01fce2ce9e6">Rf_unprotect_ptr</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove entry from pointer protection stack.  <a href="#a82fcb29fac2a0133a315c01fce2ce9e6"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_rinterface_8h.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6b78fc6cc57fcda3c412de79bd909949">R_signal_protect_error</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_rinterface_8h.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a7626bd01ae52f0794d81faab2daecf83">R_signal_unprotect_error</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void <a class="el" href="_rinterface_8h.html#abd12ab1ab8e45e8e4fec7e036d040815">NORET</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a222f5e0896baded0369a61c5110e8e37">R_signal_reprotect_error</a> (<a class="el" href="_rinternals_8h.html#a82029ec0a5a4a6692f2d459767b0c993">PROTECT_INDEX</a> i)</td></tr>
@@ -636,17 +705,27 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aaed25183e5fd4a0a4d49c24fd8c05632">R_cycle_detected</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> child)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a5f09673391d217194c2bd54f58827de9">cetype_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a270e828a33aa272879d748241919a28d">Rf_getCharCE</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa74776375a1028c737fb9d720034b95f">Rf_mkCharCE</a> (const char *name, <a class="el" href="_rinternals_8h.html#a5f09673391d217194c2bd54f58827de9">cetype_t</a> enc)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a pointer to a CHARSXP object.  <a href="#aa74776375a1028c737fb9d720034b95f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6ac21e7cf53fb99c5714da1b61db2445">Rf_mkCharLenCE</a> (const char *name, int len, <a class="el" href="_rinternals_8h.html#a5f09673391d217194c2bd54f58827de9">cetype_t</a> enc)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a CHARSXP object for specified text and encoding.  <a href="#a6ac21e7cf53fb99c5714da1b61db2445"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae8c74f1b7f48ac55d07427453117b1e1">Rf_reEnc</a> (const char *x, <a class="el" href="_rinternals_8h.html#a5f09673391d217194c2bd54f58827de9">cetype_t</a> ce_in, <a class="el" href="_rinternals_8h.html#a5f09673391d217194c2bd54f58827de9">cetype_t</a> ce_out, int subst)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a278750910b4716dc36f9dc82eb273872">R_forceAndCall</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> e, int n, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac6d6e42c89d8a615eaea3a50237665dc">R_MakeExternalPtr</a> (void *p, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> tag, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> prot)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an external pointer object.  <a href="#ac6d6e42c89d8a615eaea3a50237665dc"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a02954028c58eb3380458f36c57c1e8e3">R_ExternalPtrAddr</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the encapsulated external pointer.  <a href="#a02954028c58eb3380458f36c57c1e8e3"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a62e9f8c6ecd8215962cc03cf827637b7">R_ExternalPtrTag</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to tag object.  <a href="#a62e9f8c6ecd8215962cc03cf827637b7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a4650d3975e0e24da9f863908059c4540">R_ExternalPtrProtected</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Get pointer to protege object.  <a href="#a4650d3975e0e24da9f863908059c4540"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a937ff0b5a29ed7ffa0ae328ebd1ffd94">R_ClearExternalPtr</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the encapsulated pointer to R_NilValue.  <a href="#a937ff0b5a29ed7ffa0ae328ebd1ffd94"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a7bdc8c24c43b0765bba1a23f419e7acf">R_SetExternalPtrAddr</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, void *p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value of the encapsulated pointer.  <a href="#a7bdc8c24c43b0765bba1a23f419e7acf"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a0444a4e1643161cc868814af6277cb3f">R_SetExternalPtrTag</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> tag)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Designate the tag object.  <a href="#a0444a4e1643161cc868814af6277cb3f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aadbede759e048249fd26d6712c818ee8">R_SetExternalPtrProtected</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> p)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Designate the protege object.  <a href="#aadbede759e048249fd26d6712c818ee8"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae43294db1f75af393a0e5bb8e70f3b3f">R_RegisterFinalizer</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> fun)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a0bec9950ecdc0abf3ea6abd9d5a05b04">R_RegisterCFinalizer</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a698a5004d2faa5b98833361548ebe4d5">R_CFinalizer_t</a> fun)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a6b1c5eeb5b112156f4e215f6518a4f05">R_RegisterFinalizerEx</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> s, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> fun, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> onexit)</td></tr>
@@ -708,7 +787,9 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a0a8eceaefda25842ebef03de2b011667">R_check_class_and_super</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, const char **valid, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> rho)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a67b5c6797ef609e2f65b60fe87fd9ea7">R_check_class_etc</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, const char **valid)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a358d1b14e1d22576c8719102cdbb5363">R_PreserveObject</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> object)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Protect object against garbage collection.  <a href="#a358d1b14e1d22576c8719102cdbb5363"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#af69be80eb2050bf2e67c6690e9ea4535">R_ReleaseObject</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> object)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove object's protection against garbage collection.  <a href="#af69be80eb2050bf2e67c6690e9ea4535"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ad3f265c4f9b5fea18962e00c7c52c587">R_dot_Last</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5dc3a0ceba43207628c9c78028a1477b">R_RunExitFinalizers</a> (void)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a701a780df144fb8942d6b2ba876ac85e">R_system</a> (const char *command)</td></tr>
@@ -717,6 +798,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ab04871c02c86e49925b79079a5b57cb4">R_orderVector</a> (int *indx, int n, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> arglist, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> nalast, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> decreasing)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a39d229536dba8bc419fbd96214c3f988">R_orderVector1</a> (int *indx, int n, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a> x, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> nalast, <a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a> decreasing)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ac748aaca0a85c0cdd3831e1a958e9829">Rf_allocVector</a> (<a class="el" href="_rinternals_8h.html#a55fc7dbca2a6ab20c7250197bc377a7a">SEXPTYPE</a>, <a class="el" href="_rinternals_8h.html#a57b91701cbe7d67533eea1ef6431cc54">R_xlen_t</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a vector object.  <a href="#ac748aaca0a85c0cdd3831e1a958e9829"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a46f8e9e8f89ff110a68caa94d62ed953">Rf_conformable</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a7f3ce5737360bac96694d11c7ffed3d4">Rf_elt</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, int)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a5a95c8e8fe957f489658acb70b9501c5">Rf_inherits</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, const char *)</td></tr>
@@ -738,6 +820,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa6437bc010ab4bfc159674e73fb69d69">Rf_isValidString</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a3720f1ee9ed60ba4c0bd21069d0dd4aa">Rf_isValidStringF</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a3800c0ce4a76983304766b3deb9c1c9b">Rf_isVector</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Is an R value a vector?  <a href="#a3800c0ce4a76983304766b3deb9c1c9b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abb5d06878903d62d3303c2f9b13ff09f">Rf_isVectorAtomic</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#abb4f9ca1a58c8903053b4cd66f282e1f">Rf_isVectorList</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_boolean_8h.html#a6598d1e4b1be4261de73aafe06404a00">Rboolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a94edce26acaff41dfb5b96a9885cec08">Rf_isVectorizable</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
@@ -749,6 +832,7 @@ Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a82eb8eb490b3703ec8f54ea721dcc4db">Rf_lang6</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a66595b284b3660c250abe652ed0534db">Rf_lastElt</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa9b481cd63b187b7bc4afd77f1902953">Rf_lcons</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an Expression with a specified car and tail.  <a href="#aa9b481cd63b187b7bc4afd77f1902953"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#ab51d3ea58a092f8c90f8c07c0fcd10b6">R_len_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#a65eba068c4cfa8e31b8ad2cac8e54496">Rf_length</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#aa57ece4b460a40fea22e56fdf2113bff">Rf_list1</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_rinternals_8h.html#ae522318a4f1a694d45d6415119f6d9cb">Rf_list2</a> (<a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>, <a class="el" href="_rinternals_8h.html#a34caddf59fe3310c82b1f75df0594967">SEXP</a>)</td></tr>
@@ -2051,8 +2135,8 @@ Variables</h2></td></tr>
 <div class="memdoc">
 <b>Value:</b><div class="fragment"><pre class="fragment"><span class="keywordflow">do</span> {                \
     SEXP __x__ = (x);               \
-    if (<a class="code" href="_rinternals_8h.html#a5dc88c8588911faedc029667b6317565">NAMED</a>(__x__) != <a class="code" href="_rinternals_8h.html#a31263d18600b09131f81da1335296dd1">NAMEDMAX</a>)           \
-        SET_NAMED(__x__, <a class="code" href="_rinternals_8h.html#a5dc88c8588911faedc029667b6317565">NAMED</a>(__x__) + 1);     \
+    if (<a class="code" href="_rinternals_8h.html#a5dc88c8588911faedc029667b6317565" title="Get object copying status.">NAMED</a>(__x__) != <a class="code" href="_rinternals_8h.html#a31263d18600b09131f81da1335296dd1">NAMEDMAX</a>)           \
+        SET_NAMED(__x__, <a class="code" href="_rinternals_8h.html#a5dc88c8588911faedc029667b6317565" title="Get object copying status.">NAMED</a>(__x__) + 1);     \
     } <span class="keywordflow">while</span> (0)
 </pre></div>
 </div>
@@ -4543,6 +4627,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get the attributes of an R value. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to the value whose attributes are required.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the attributes object of <em>x</em> , which will either be a pairlist or R_NilValue. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a18e86e62b0601eac2bf86870a8a0a7da"></a><!-- doxytag: member="Rinternals.h::BODY" ref="a18e86e62b0601eac2bf86870a8a0a7da" args="(SEXP x)" -->
@@ -4559,6 +4652,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Access the body of a closure. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the body of <em>x</em>. </dd></dl>
 
 </div>
 </div>
@@ -4577,6 +4679,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Equivalent to CAR(CAR(e)). </p>
+
 </div>
 </div>
 <a class="anchor" id="aacd1cf0ad85944f9a3226e9685ba2ba7"></a><!-- doxytag: member="Rinternals.h::CAD4R" ref="aacd1cf0ad85944f9a3226e9685ba2ba7" args="(SEXP e)" -->
@@ -4593,6 +4697,8 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Equivalent to CAR(CDR(CDR(CDR(CDR(e))))). </p>
 
 </div>
 </div>
@@ -4611,6 +4717,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Equivalent to CAR(CDR(CDR(CDR(e)))). </p>
+
 </div>
 </div>
 <a class="anchor" id="a1fce21f676b68787c62a6934d7fb863b"></a><!-- doxytag: member="Rinternals.h::CADDR" ref="a1fce21f676b68787c62a6934d7fb863b" args="(SEXP e)" -->
@@ -4627,6 +4735,8 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Equivalent to CAR(CDR(CDR(e))). </p>
 
 </div>
 </div>
@@ -4645,6 +4755,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Equivalent to CAR(CDR(e)). </p>
+
 </div>
 </div>
 <a class="anchor" id="a09c3ff3d2cfaac84904d2a06435791dd"></a><!-- doxytag: member="Rinternals.h::CAR" ref="a09c3ff3d2cfaac84904d2a06435791dd" args="(SEXP e)" -->
@@ -4661,6 +4773,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get car of pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Pointer to a pairlist element, or R_NilValue. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the value of the list car, or 0 if <em>e</em> is R_NilValue. </dd></dl>
 
 </div>
 </div>
@@ -4679,6 +4800,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Equivalent to CDR(CAR(e)). </p>
+
 </div>
 </div>
 <a class="anchor" id="ab1037f3c3b27d29f0811965bcd41c6e9"></a><!-- doxytag: member="Rinternals.h::CDDDR" ref="ab1037f3c3b27d29f0811965bcd41c6e9" args="(SEXP e)" -->
@@ -4695,6 +4818,8 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Equivalent to CDR(CDR(CDR(e))). </p>
 
 </div>
 </div>
@@ -4713,6 +4838,8 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Equivalent to CDR(CDR(e)). </p>
+
 </div>
 </div>
 <a class="anchor" id="a447285a642d7f6e330ebc47d3698c24c"></a><!-- doxytag: member="Rinternals.h::CDR" ref="a447285a642d7f6e330ebc47d3698c24c" args="(SEXP e)" -->
@@ -4729,6 +4856,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get tail of pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Pointer to a pairlist element, or R_NilValue. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the tail of the list, or 0 if <em>e</em> is R_NilValue. </dd></dl>
 
 </div>
 </div>
@@ -4747,6 +4883,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Access the environment of a closure. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the environment of x. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="abab3f0a638f93d6db75602eec1bc6dcb"></a><!-- doxytag: member="Rinternals.h::COMPLEX" ref="abab3f0a638f93d6db75602eec1bc6dcb" args="(SEXP x)" -->
@@ -4763,6 +4908,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a complex vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the first element of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -4808,6 +4960,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Does symbol relate to a <code>...</code> expression? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>TRUE</code> iff this symbol denotes an element of a <code>...</code> expression. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a26b78b96abfafe808e779e95f4943c13"></a><!-- doxytag: member="Rinternals.h::DUPLICATE_ATTRIB" ref="a26b78b96abfafe808e779e95f4943c13" args="(SEXP to, SEXP from)" -->
@@ -4835,6 +4996,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Replace the attributes of <em>to</em> by those of <em>from</em>. </p>
+<p>The status of <em>to</em> as an S4 Object is also copied from <em>from</em> .</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>Pointer to a R value.</td></tr>
+    <tr><td class="paramname">from</td><td>Pointer to another R Value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a249c3631888958ab5d69315ccc483a66"></a><!-- doxytag: member="Rinternals.h::ENCLOS" ref="a249c3631888958ab5d69315ccc483a66" args="(SEXP x)" -->
@@ -4851,6 +5022,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Access enclosing environment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to an environment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the enclosing environment of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -4886,6 +5066,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Access formal arguments of a closure. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the formal argument list of <em>x</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a2e20a49e99afcfea1e752a07501df263"></a><!-- doxytag: member="Rinternals.h::FRAME" ref="a2e20a49e99afcfea1e752a07501df263" args="(SEXP x)" -->
@@ -4902,6 +5091,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Access an environment's Frame, represented as a pairlist. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to an environment.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to a pairlist representing the contents of the Frame of <em>x</em> (may be R_NilValue). </dd></dl>
 
 </div>
 </div>
@@ -4970,6 +5168,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to an <code>IntVector</code> or a <code>LogicalVector</code> (i.e. an R integer or logical vector).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the first element of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -4987,6 +5192,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get function accessed via <code>.Internal()</code>. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>If <em>x</em> is associated with a function invoked in R <em>via</em> <code>.Internal()</code>, then a pointer to the appropriate function, otherwise R_NilValue. </dd></dl>
 
 </div>
 </div>
@@ -5021,6 +5235,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Is this an S4 object? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true iff <em>x</em> is an S4 object. </dd></dl>
 
 </div>
 </div>
@@ -5072,6 +5295,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a logical vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the first element of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -5124,6 +5354,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get object copying status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Refer to 'R Internals' document. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ac504d4f6b07d5dfd7953eb5949d885d6"></a><!-- doxytag: member="Rinternals.h::OBJECT" ref="ac504d4f6b07d5dfd7953eb5949d885d6" args="(SEXP x)" -->
@@ -5140,6 +5379,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Does an value have a class attribute? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to an R object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>true iff <em>x</em> has a class attribute. </dd></dl>
 
 </div>
 </div>
@@ -5158,6 +5406,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Access the expression of a promise. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a promise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the expression to be evaluated by the promise. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="abd90dc58267dad93868b1766c6f1ec51"></a><!-- doxytag: member="Rinternals.h::PRENV" ref="abd90dc58267dad93868b1766c6f1ec51" args="(SEXP x)" -->
@@ -5175,6 +5432,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Access the environment of a promise. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a promise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the environment in which the promise is to be evaluated. Set to R_NilValue when the promise has been evaluated. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a846286910a8f1a4df3ba7032e212bb9a"></a><!-- doxytag: member="Rinternals.h::PRINTNAME" ref="a846286910a8f1a4df3ba7032e212bb9a" args="(SEXP x)" -->
@@ -5191,6 +5457,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Symbol name. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to a CHARSXP representing <em>x's</em> name. </dd></dl>
 
 </div>
 </div>
@@ -5225,6 +5500,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Access the value of a promise. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a promise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the value of the promise, or to R_UnboundValue if it has not yet been evaluated.. </dd></dl>
 
 </div>
 </div>
@@ -5381,6 +5665,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Access the content of CHARSXP as a C-style string. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td><code>pointer</code> to a CHARSXP .</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>const</code> pointer to character 0 of <em>x</em> . </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0a8eceaefda25842ebef03de2b011667"></a><!-- doxytag: member="Rinternals.h::R_check_class_and_super" ref="a0a8eceaefda25842ebef03de2b011667" args="(SEXP x, const char **valid, SEXP rho)" -->
@@ -5474,6 +5767,14 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Reset the encapsulated pointer to R_NilValue. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -5802,6 +6103,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get the encapsulated external pointer. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>the external pointer encapsulated by <em>s</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4650d3975e0e24da9f863908059c4540"></a><!-- doxytag: member="Rinternals.h::R_ExternalPtrProtected" ref="a4650d3975e0e24da9f863908059c4540" args="(SEXP s)" -->
@@ -5819,6 +6129,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get pointer to protege object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>a pointer to the protege object of <em>s</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a62e9f8c6ecd8215962cc03cf827637b7"></a><!-- doxytag: member="Rinternals.h::R_ExternalPtrTag" ref="a62e9f8c6ecd8215962cc03cf827637b7" args="(SEXP s)" -->
@@ -5835,6 +6154,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get pointer to tag object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>a pointer to the tag object of <em>s</em>. </dd></dl>
 
 </div>
 </div>
@@ -6533,6 +6861,17 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Create an external pointer object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>The pointer that the external pointer object is to encapsulate. May be NULL. </td></tr>
+    <tr><td class="paramname">tag</td><td>Pointer to the tag object. May be R_NilValue (and often is). </td></tr>
+    <tr><td class="paramname">prot</td><td>Pointer to the protege object. May be R_NilValue (and often is).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created external pointer object. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a77b3e411fa63f10ed7b7b2322045d997"></a><!-- doxytag: member="Rinternals.h::R_MakeWeakRef" ref="a77b3e411fa63f10ed7b7b2322045d997" args="(SEXP key, SEXP val, SEXP fin, Rboolean onexit)" -->
@@ -6797,6 +7136,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Protect object against garbage collection. </p>
+<p>This is intended for long-term protection, for which <a class="el" href="_rinternals_8h.html#ae3314bd3ff13538cb38b79804a67289a">PROTECT()</a> etc. would be inappropriate.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>Pointer to the object to be preserved. It is permissible for this to be R_NilValue. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3341aa9549d9c18eba91a5ce30053e96"></a><!-- doxytag: member="Rinternals.h::R_PromiseExpr" ref="a3341aa9549d9c18eba91a5ce30053e96" args="(SEXP p)" -->
@@ -7005,6 +7353,14 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Remove object's protection against garbage collection. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">object</td><td>Pointer to the object whose protection is to be removed. It is permissible (but pointless) for this to be a pointer to an object that is not currently protected by <a class="el" href="_rinternals_8h.html#a358d1b14e1d22576c8719102cdbb5363" title="Protect object against garbage collection.">R_PreserveObject()</a>, but in that case <a class="el" href="_rinternals_8h.html#af69be80eb2050bf2e67c6690e9ea4535" title="Remove object&#39;s protection against garbage collection.">R_ReleaseObject()</a> has no effect. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3a470b1f54139f1ec1ed971fbe900510"></a><!-- doxytag: member="Rinternals.h::R_Reprotect" ref="a3a470b1f54139f1ec1ed971fbe900510" args="(SEXP, PROTECT_INDEX)" -->
@@ -7181,6 +7537,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set the value of the encapsulated pointer. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+    <tr><td class="paramname">p</td><td>New pointer value (may be NULL). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="aadbede759e048249fd26d6712c818ee8"></a><!-- doxytag: member="Rinternals.h::R_SetExternalPtrProtected" ref="aadbede759e048249fd26d6712c818ee8" args="(SEXP s, SEXP p)" -->
@@ -7208,6 +7573,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Designate the protege object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+    <tr><td class="paramname">p</td><td>Pointer to the new protege object (or R_NilValue). </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a0444a4e1643161cc868814af6277cb3f"></a><!-- doxytag: member="Rinternals.h::R_SetExternalPtrTag" ref="a0444a4e1643161cc868814af6277cb3f" args="(SEXP s, SEXP tag)" -->
@@ -7234,6 +7608,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Designate the tag object. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an external pointer object.</td></tr>
+    <tr><td class="paramname">tag</td><td>Pointer to the new tag object (or R_NilValue). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -7578,6 +7961,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a raw vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the first element of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -7596,6 +7986,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Query debugging status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><code>true</code> if debugging is set, i.e. evaluations of the function should run under the browser. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a62837c8573dfc4e85c798b52a90faccd"></a><!-- doxytag: member="Rinternals.h::REAL" ref="a62837c8573dfc4e85c798b52a90faccd" args="(SEXP x)" -->
@@ -7612,6 +8011,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a numeric vector.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the first element of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -7952,6 +8358,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Create a pairlist of a specified length. </p>
+<p>This constructor creates a pairlist with a specified number of elements. On creation, each element has 'car' and 'tag' set to R_NilValue.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>Number of elements required in the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The constructed list, or R_NilValue if <em>n</em> is zero. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6c75060247fda122889ace183b97720b"></a><!-- doxytag: member="Rinternals.h::Rf_allocMatrix" ref="a6c75060247fda122889ace183b97720b" args="(SEXPTYPE mode, int nrow, int ncol)" -->
@@ -8002,6 +8418,9 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Create an S4 object. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created object. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6b3e58b3b4f92c10e08bfcdb548519cf"></a><!-- doxytag: member="Rinternals.h::Rf_allocSExp" ref="a6b3e58b3b4f92c10e08bfcdb548519cf" args="(SEXPTYPE t)" -->
@@ -8018,6 +8437,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Create an object of a type derived from pairlist element. </p>
+<p>The object is created with car, tag and tail pointers all set to R_NilValue.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t</td><td>The SEXPTYPE of the required object. Must be one of LISTSXP, LANGSXP, DOTSXP or BCODESXP.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created object. </dd></dl>
 
 </div>
 </div>
@@ -8045,6 +8474,17 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Create a vector object. </p>
+<p>Allocate a vector object. This ensures only validity of SEXPTYPE values representing lists (as the elements must be initialized).</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stype</td><td>The type of vector required.</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the vector to be created.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created vector. </dd></dl>
 
 </div>
 </div>
@@ -8478,6 +8918,17 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Creates a pairlist with a specified car and tail. </p>
+<p>This function protects its arguments from the garbage collector.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>Pointer to the 'car' of the element to be created.</td></tr>
+    <tr><td class="paramname">tl</td><td>Pointer to the 'tail' of the element to be created, which must be a pairlist or R_NilValue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the constructed pairlist. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad888cef1ad8a814f0f04c27fb20b955d"></a><!-- doxytag: member="Rinternals.h::Rf_copyListMatrix" ref="ad888cef1ad8a814f0f04c27fb20b955d" args="(SEXP s, SEXP t, Rboolean byrow)" -->
@@ -8570,6 +9021,17 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Copy attributes, with some exceptions. </p>
+<p>This is called in the case of binary operations to copy most attributes from one of the input arguments to the output. Note that the Dim, Dimnames and Names attributes are not copied: these should have been assigned elsewhere. The function also copies the S4 object status.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inp</td><td>Pointer to the R value from which attributes are to be copied.</td></tr>
+    <tr><td class="paramname">ans</td><td>Pointer to the R value to which attributes are to be copied.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>The above documentation is probably incomplete: refer to the source code for further details. </dd></dl>
 
 </div>
 </div>
@@ -8877,6 +9339,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Evaluate an object in a specified Environment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Pointer to the object to be evaluated.</td></tr>
+    <tr><td class="paramname">rho</td><td>Pointer to an Environment</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the result of evaluating <em>e</em> in <em>rho</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8cc2c7e17958cf21a7fd2a6f0c2ecfa8"></a><!-- doxytag: member="Rinternals.h::Rf_findFun" ref="a8cc2c7e17958cf21a7fd2a6f0c2ecfa8" args="(SEXP symbol, SEXP rho)" -->
@@ -9076,6 +9548,17 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Access a named attribute. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Pointer to the R value whose attributes are to be accessed.</td></tr>
+    <tr><td class="paramname">name</td><td>Either a pointer to the symbol representing the required attribute, or a pointer to a character vector containing the required symbol name as the first element; in the latter case, as a side effect, the corresponding symbol is installed if necessary.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the requested attribute, or R_NilValue if there is no such attribute.</dd></dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>The above documentation is incomplete: refer to the source code for further details. </dd></dl>
 
 </div>
 </div>
@@ -9328,6 +9811,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get a pointer to a regular Symbol object. </p>
+<p>If no Symbol with the specified name currently exists, one will be created, and a pointer to it returned. Otherwise a pointer to the existing Symbol will be returned.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the required Symbol (CE_NATIVE encoding is assumed).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to a Symbol (preexisting or newly created) with the required name. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad19d7efc89640458d15eb09397f7fe08"></a><!-- doxytag: member="Rinternals.h::Rf_installChar" ref="ad19d7efc89640458d15eb09397f7fe08" args="(SEXP charSXP)" -->
@@ -9439,6 +9932,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is a complex vector. </dd></dl>
 
 </div>
 </div>
@@ -9457,6 +9957,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Is this an environment? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to a R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the value pointed to by s is an environment. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ad595ea336528d1a1db32a36df951433e"></a><!-- doxytag: member="Rinternals.h::Rf_isExpression" ref="ad595ea336528d1a1db32a36df951433e" args="(SEXP s)" -->
@@ -9473,6 +9982,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is an expression. </dd></dl>
 
 </div>
 </div>
@@ -9609,6 +10125,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is a logical vector. </dd></dl>
 
 </div>
 </div>
@@ -9661,6 +10184,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Is this the null value? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is either <code>R_NilValue</code> or has SEXPTYPE <code>NILSXP</code>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a545039e47f619029af66ab450812c007"></a><!-- doxytag: member="Rinternals.h::Rf_isNumber" ref="a545039e47f619029af66ab450812c007" args="(SEXP)" -->
@@ -9711,6 +10243,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Does an object have a class attribute? </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the object pointed to by <em>s</em> has a class attribute. </dd></dl>
 
 </div>
 </div>
@@ -9779,6 +10320,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is a real vector. </dd></dl>
 
 </div>
 </div>
@@ -9813,6 +10361,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff the R value pointed to by <em>s</em> is a vector of strings. </dd></dl>
 
 </div>
 </div>
@@ -9830,6 +10385,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Test if an R value is a symbol. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to an R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff <em>s</em> points to an R value with SEXPTYPE SYMSXP. </dd></dl>
 
 </div>
 </div>
@@ -9986,6 +10550,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Is an R value a vector? </p>
+<p>Vector in this context embraces R matrices and arrays.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>Pointer to the R value to be tested. The value may be R_NilValue, in which case the function returns FALSE.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>TRUE iff <em>s</em> points to a vector object. </dd></dl>
 
 </div>
 </div>
@@ -10310,6 +10884,17 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Create an Expression with a specified car and tail. </p>
+<p>This function protects its arguments from the garbage collector.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cr</td><td>Pointer to the 'car' of the element to be created.</td></tr>
+    <tr><td class="paramname">tl</td><td>Pointer to the 'tail' of the element to be created, which must be a pairlist or R_NilValue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the constructed list. </dd></dl>
 
 </div>
 </div>
@@ -10683,6 +11268,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get a pointer to a CHARSXP object. </p>
+<p>CE_NATIVE encoding is assumed. If no CHARSXP with the specified text and encoding currently exists, one will be created. Otherwise a pointer to the existing CHARSXP will be returned.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The null-terminated text of the required string.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to a string object representing the specified text. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="aa74776375a1028c737fb9d720034b95f"></a><!-- doxytag: member="Rinternals.h::Rf_mkCharCE" ref="aa74776375a1028c737fb9d720034b95f" args="(const char *name, cetype_t enc)" -->
@@ -10710,6 +11305,17 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get a pointer to a CHARSXP object. </p>
+<p>If no CHARSXP with the specified text and encoding currently exists, one will be created. Otherwise a pointer to the existing CHARSXP will be returned.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>The null-terminated text of the required cached string.</td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding of the required String. Only CE_NATIVE, CE_UTF8 or CE_LATIN1 are permitted in this context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to a string object representing the specified text in the specified encoding. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="acb91f1e58839dfa2dba233d66888ac06"></a><!-- doxytag: member="Rinternals.h::Rf_mkCharLen" ref="acb91f1e58839dfa2dba233d66888ac06" args="(const char *name, int len)" -->
@@ -10736,6 +11342,17 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Create a CHARSXP object for specified text. </p>
+<p>CE_NATIVE encoding is assumed. If no CHARSXP with the specified text and encoding currently exists, one will be created. Otherwise a pointer to the existing CHARSXP will be returned.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text of the string to be created, possibly including embedded null characters. The encoding is assumed to be CE_NATIVE.</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the string pointed to by <em>text</em>. Must be nonnegative. The created string will comprise the text plus an appended null byte.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created string. </dd></dl>
 
 </div>
 </div>
@@ -10769,6 +11386,18 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Create a CHARSXP object for specified text and encoding. </p>
+<p>If no CHARSXP with the specified text and encoding currently exists, one will be created. Otherwise a pointer to the existing CHARSXP will be returned.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text of the string to be created, possibly including embedded null characters. The encoding is assumed to be CE_NATIVE.</td></tr>
+    <tr><td class="paramname">length</td><td>The length of the string pointed to by <em>text</em>. Must be nonnegative. The created string will comprise the text plus an appended null byte.</td></tr>
+    <tr><td class="paramname">encoding</td><td>The encoding of the required String. Only CE_NATIVE, CE_UTF8 or CE_LATIN1 are permitted in this context.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the created string. </dd></dl>
 
 </div>
 </div>
@@ -11311,6 +11940,18 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set or remove a named attribute. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vec</td><td>Pointer to the value whose attributes are to be modified.</td></tr>
+    <tr><td class="paramname">name</td><td>Either a pointer to the symbol representing the required attribute, or a pointer to a character vector containing the required symbol name as the first element; in the latter case, as a side effect, the corresponding symbol is installed if necessary.</td></tr>
+    <tr><td class="paramname">val</td><td>Either the value to which the attribute is to be set, or R_NilValue. In the latter case the attribute (if present) is removed.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Refer to source code. (Sometimes <em>vec</em>, sometimes <em>val</em>, sometime R_NilValue ...)</dd></dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>The above documentation is probably incomplete: refer to the source code for further details. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6144ef45160b8680a4e19f2e40eb5617"></a><!-- doxytag: member="Rinternals.h::Rf_setSVector" ref="a6144ef45160b8680a4e19f2e40eb5617" args="(SEXP *vec, int len, SEXP val)" -->
@@ -11560,6 +12201,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Convert contents of a CHARSXP to UTF8. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a CHARSXP.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The text of <em>x</em> rendered in UTF8 encoding.</dd></dl>
+<dl class="note"><dt><b>Note:</b></dt><dd>The result is held in memory allocated using <a class="el" href="_memory_8h.html#a2b46ca32433e3e32ae58a09dbbbdf349">R_alloc()</a>. The calling code must arrange for this memory to be released in due course. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0cd5308dd919b022287d6938dcbe2ced"></a><!-- doxytag: member="Rinternals.h::Rf_type2char" ref="a0cd5308dd919b022287d6938dcbe2ced" args="(SEXPTYPE t)" -->
@@ -11576,6 +12227,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Name of type within R. </p>
+<p>Translate a SEXPTYPE to the name by which it is known within R.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">st</td><td>The SEXPTYPE whose name is required.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The SEXPTYPE's name within R. </dd></dl>
 
 </div>
 </div>
@@ -11661,6 +12322,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Remove entry from pointer protection stack. </p>
+<p>Removes from the C pointer protection stack the uppermost stack cell containing a pointer to a specified node, and drops all the stack cells above it by one place.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node</td><td>Pointer to the node whose cell is to be removed from the C pointer protection stack. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -11823,6 +12493,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Get function tracing status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a function, or R_NilValue.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Refer to 'R Internals' document. Returns 0 if <em>x</em> is R_NilValue. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a5c73d55a1288c49eeda433378ea2826b"></a><!-- doxytag: member="Rinternals.h::SET_ATTRIB" ref="a5c73d55a1288c49eeda433378ea2826b" args="(SEXP x, SEXP v)" -->
@@ -11849,6 +12528,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Replace an object's attributes. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to an R value.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to a pairlist giving the new attributes of <em>x</em> or R_NilValue. <em>x</em> should be considered to assume ownership of the 'car' values in <em>v</em> ; they should therefore not be subsequently altered externally. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -11903,6 +12591,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Replace the environment of a closure. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to the environment now to be considered as the environment of this closure. R_NilValue is not permissible. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -12147,6 +12844,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Associate a Symbol with a <code>.Internal()</code> function. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to the builtin function to be associated by this symbol. R_NilValue is permissible, and signifies that any previous association of <em>sym</em> with a function is to be removed from the table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a1e5b5608cddd957c750128989886a9b1"></a><!-- doxytag: member="Rinternals.h::SET_MISSING" ref="a1e5b5608cddd957c750128989886a9b1" args="(SEXP x, int v)" -->
@@ -12200,6 +12906,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Set object copying status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to R value. The function does nothing if <em>x</em> is R_NilValue.</td></tr>
+    <tr><td class="paramname">v</td><td>Refer to 'R Internals' document. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -12363,6 +13078,17 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set the value of a promise. </p>
+<p>Once the value is set to something other than R_UnboundValue, the environment pointer is set to R_NilValue.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a promise.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to the value to be assigned to the promise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Replace this with a method call to evaluate the promise. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a43e86ff6ce8973632c939a62ba528e38"></a><!-- doxytag: member="Rinternals.h::SET_RDEBUG" ref="a43e86ff6ce8973632c939a62ba528e38" args="(SEXP x, int v)" -->
@@ -12389,6 +13115,14 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set the debugging state of a closure object.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a closure object.</td></tr>
+    <tr><td class="paramname">v</td><td>The new debugging state. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -12444,6 +13178,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set function tracing status. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a function, or R_NilValue.</td></tr>
+    <tr><td class="paramname">v</td><td>The desired tracing status: non-zero if tracing is required. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a1263d0614ed3c58be6d9b90e173dcc1f"></a><!-- doxytag: member="Rinternals.h::SET_S4_OBJECT" ref="a1263d0614ed3c58be6d9b90e173dcc1f" args="(SEXP x)" -->
@@ -12494,6 +13237,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set element of character vector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a character vector .</td></tr>
+    <tr><td class="paramname">i</td><td>Index of the required element. There is no bounds checking.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to CHARSXP representing the new value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a57cddf6634029de0ce2b571ded8312e8"></a><!-- doxytag: member="Rinternals.h::SET_SYMVALUE" ref="a57cddf6634029de0ce2b571ded8312e8" args="(SEXP x, SEXP v)" -->
@@ -12520,6 +13273,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Set symbol's value in the base environment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+    <tr><td class="paramname">val</td><td>Pointer to the R value now to be considered as the value of this symbol. R_NilValue or R_UnboundValue are permissible values of <em>val</em>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>No binding to R_UnboundValue ought to be created. </dd></dl>
 
 </div>
 </div>
@@ -12548,6 +13311,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set the tag of a pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new tag of the pairlist element. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a class="anchor" id="a30b33571a6a8822208a58e24239aabdc"></a><!-- doxytag: member="Rinternals.h::SET_TRUELENGTH" ref="a30b33571a6a8822208a58e24239aabdc" args="(SEXP x, int v)" -->
@@ -12574,6 +13346,14 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set 'true length' of vector.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a vector object.</td></tr>
+    <tr><td class="paramname">v</td><td>The required new 'true length'. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -12635,6 +13415,17 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set element of list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a list.</td></tr>
+    <tr><td class="paramname">i</td><td>Index of the required element.</td></tr>
+    <tr><td class="paramname">v</td><td>Pointer to R value representing the new value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The new value <em>v</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="adf8e8a70a1b2c0bf32df3a1c8734ec5f"></a><!-- doxytag: member="Rinternals.h::SETCAD4R" ref="adf8e8a70a1b2c0bf32df3a1c8734ec5f" args="(SEXP e, SEXP y)" -->
@@ -12661,6 +13452,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Set the 'car' value of the fifth element of list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element with at least four successors. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new value of the fifth element of the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
 
 </div>
 </div>
@@ -12689,6 +13490,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set the 'car' value of the fourth element of list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element with at least three successors. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new value of the fourth element of the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a0c68a3088d153515696335af10320e60"></a><!-- doxytag: member="Rinternals.h::SETCADDR" ref="a0c68a3088d153515696335af10320e60" args="(SEXP x, SEXP y)" -->
@@ -12715,6 +13526,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Set the 'car' value of the third element of list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element with at least two successors. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new value of the third element of the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
 
 </div>
 </div>
@@ -12743,6 +13564,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Set the 'car' value of the second element of list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element with at least one successor </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new value of the second element of the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a4acfcac1ee06a9063e8a1c04ed06fdb9"></a><!-- doxytag: member="Rinternals.h::SETCAR" ref="a4acfcac1ee06a9063e8a1c04ed06fdb9" args="(SEXP x, SEXP y)" -->
@@ -12769,6 +13600,16 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Set the 'car' value of a pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new value of the list car.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
 
 </div>
 </div>
@@ -12797,6 +13638,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Replace the tail of a pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a pairlist element. </td></tr>
+    <tr><td class="paramname">y</td><td>Pointer to an R value representing the new tail of the list.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd><em>y</em>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a8bd98d1eb33933f6f401b6b10422a005"></a><!-- doxytag: member="Rinternals.h::SETLENGTH" ref="a8bd98d1eb33933f6f401b6b10422a005" args="(SEXP x, int v)" -->
@@ -12823,6 +13674,14 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<p>Set length of vector.</p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a vector object.</td></tr>
+    <tr><td class="paramname">v</td><td>The required new length, which must not be greater than the original length of the vector. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -12905,6 +13764,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Examine element of a character vector. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a character vector.</td></tr>
+    <tr><td class="paramname">i</td><td>Index of the required element. There is no bounds checking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to extracted <em>i</em> 'th element. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ada60e1e3fde4d66473a1c9a086e36138"></a><!-- doxytag: member="Rinternals.h::STRING_PTR" ref="ada60e1e3fde4d66473a1c9a086e36138" args="(SEXP x)" -->
@@ -12939,6 +13808,15 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Symbol's value in the base environment. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a symbol.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to an R value representings <em>x's</em> value. Returns R_UnboundValue if no value is currently associated with the Symbol. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a813527ca387abda54dbb2cbf9e8c4679"></a><!-- doxytag: member="Rinternals.h::TAG" ref="a813527ca387abda54dbb2cbf9e8c4679" args="(SEXP e)" -->
@@ -12955,6 +13833,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get tag of pairlist element. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>Pointer to a pairlist element, or R_NilValue. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Pointer to the tag of the list element, or 0 if <em>e</em> is R_NilValue. </dd></dl>
 
 </div>
 </div>
@@ -12989,6 +13876,15 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+
+<p>Get object's SEXPTYPE. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to R value.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>SEXPTYPE of <em>x</em> . </dd></dl>
 
 </div>
 </div>
@@ -13034,6 +13930,16 @@ Variables</h2></td></tr>
 </div>
 <div class="memdoc">
 
+<p>Examine element of a list. </p>
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a list.</td></tr>
+    <tr><td class="paramname">i</td><td>Index of the required element. There is no bounds checking.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The value of the <em>i</em> 'th element. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a526828de2d3856a8a7ef3e5831ddb7e6"></a><!-- doxytag: member="Rinternals.h::VECTOR_PTR" ref="a526828de2d3856a8a7ef3e5831ddb7e6" args="(SEXP x)" -->
@@ -13067,6 +13973,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a vector object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The length of <em>x</em>, or 0 if <em>x</em> is R_NilValue. (In the case of certain hash tables, this means the 'capacity' of <em>x</em> , not all of which may be used.) </dd></dl>
 
 </div>
 </div>
@@ -13084,6 +13997,13 @@ Variables</h2></td></tr>
       </table>
 </div>
 <div class="memdoc">
+<dl class="params"><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Pointer to a vector object.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The 'true length' of <em>x</em>. According to the R Internals document for R 2.4.1, this is only used for certain hash tables, and signifies the number of used slots in the table. </dd></dl>
 
 </div>
 </div>
