@@ -445,17 +445,82 @@ typedef union { VECTOR_SEXPREC s; double align; } SEXPREC_ALIGN;
 typedef struct SEXPREC *SEXP;
 
 #define CHAR(x)		R_CHAR(x)
+
+/** @brief Access the content of CHARSXP as a C-style string.
+ *
+ * @param x \c pointer to a CHARSXP .
+ *
+ * @return \c const pointer to character 0 of \a x .
+ */
 const char *(R_CHAR)(SEXP x);
 
 /* Various tests with macro versions in the second USE_RINTERNALS section */
+
+/** @brief Is this the null value?
+ *
+ * @param s Pointer to an R value.
+ *
+ * @return TRUE iff the R value pointed to by \a s is either
+ * <tt>R_NilValue</tt> or has SEXPTYPE <tt>NILSXP</tt>.
+ */
 Rboolean (Rf_isNull)(SEXP s);
+
+/** @brief Test if an R value is a symbol.
+ *
+ * @param s Pointer to an R value.
+ *
+ * @return TRUE iff \a s points to an R value with SEXPTYPE
+ *         SYMSXP.
+ */
 Rboolean (Rf_isSymbol)(SEXP s);
+
+/**
+ * @param s Pointer to an R value.
+ * @return TRUE iff the R value pointed to by \a s is a
+ *         logical vector.
+ */
 Rboolean (Rf_isLogical)(SEXP s);
+
+/**
+ * @param s Pointer to an R value.
+ * @return TRUE iff the R value pointed to by \a s is a real vector.
+ */
 Rboolean (Rf_isReal)(SEXP s);
+
+/**
+ * @param s Pointer to an R value.
+ * @return TRUE iff the R value pointed to by \a s is a complex vector.
+ */
 Rboolean (Rf_isComplex)(SEXP s);
+
+/**
+ * @param s Pointer to an R value.
+ * @return TRUE iff the R value pointed to by \a s is an expression.
+ */
 Rboolean (Rf_isExpression)(SEXP s);
+
+/** @brief Is this an environment?
+ *
+ * @param s Pointer to a R value.
+ *
+ * @return TRUE iff the value pointed to by s is an environment.
+ */
 Rboolean (Rf_isEnvironment)(SEXP s);
+
+/**
+ * @param s Pointer to an R value.
+ * @return TRUE iff the R value pointed to by \a s is a vector of
+ *         strings.
+ */
 Rboolean (Rf_isString)(SEXP s);
+
+/** @brief Does an object have a class attribute?
+ *
+ * @param s Pointer to an R value.
+ *
+ * @return TRUE iff the object pointed to by \a s has a
+ * class attribute.
+ */
 Rboolean (Rf_isObject)(SEXP s);
 
 # define IS_SCALAR(x, type) (TYPEOF(x) == (type) && XLENGTH(x) == 1)
@@ -523,20 +588,83 @@ Rboolean (Rf_isObject)(SEXP s);
 */
 
 /* General Cons Cell Attributes */
+
+/** @brief Get the attributes of an R value.
+ *
+ * @param x Pointer to the value whose attributes are required.
+ *
+ * @return Pointer to the attributes object of \a x , which will either be
+ *    a pairlist or R_NilValue.
+ */
 SEXP (ATTRIB)(SEXP x);
+
+/** @brief Does an value have a class attribute?
+ *
+ * @param x Pointer to an R object.
+ *
+ * @return true iff \a x has a class attribute.
+ */
 int  (OBJECT)(SEXP x);
 int  (MARK)(SEXP x);
+
+/** @brief Get object's SEXPTYPE.
+ *
+ * @param x Pointer to R value.
+ *
+ * @return SEXPTYPE of \a x .
+ */
 int  (TYPEOF)(SEXP x);
+
+/** @brief Get object copying status.
+ *
+ * @param x Pointer to a R value.
+ *
+ * @return Refer to 'R Internals' document.
+ */
 int  (NAMED)(SEXP x);
 int  (REFCNT)(SEXP x);
 void (SET_OBJECT)(SEXP x, int v);
 void (SET_TYPEOF)(SEXP x, int v);
+
+/** @brief Set object copying status.
+ *
+ * @param x Pointer to R value.  The function does nothing
+ *          if \a x is R_NilValue.
+ *
+ * @param v Refer to 'R Internals' document.
+ */
 void (SET_NAMED)(SEXP x, int v);
+
+/** @brief Replace an object's attributes.
+ *
+ * @param x Pointer to an R value.
+ *
+ * @param v Pointer to a pairlist giving the new attributes of \a
+ *          x or R_NilValue.  \a x should be considered to assume ownership of
+ *          the 'car' values in \a v ; they should therefore not
+ *          be subsequently altered externally.
+ */
 void SET_ATTRIB(SEXP x, SEXP v);
+
+/** @brief Replace the attributes of \a to by those of \a from.
+ *
+ * The status of \a to as an S4 Object is also copied from \a from .
+ *
+ * @param to Pointer to a R value.
+ *
+ * @param from Pointer to another R Value.
+ */
 void DUPLICATE_ATTRIB(SEXP to, SEXP from);
 void SHALLOW_DUPLICATE_ATTRIB(SEXP to, SEXP from);
 
 /* S4 object testing */
+
+/** @brief Is this an S4 object?
+ *
+ * @param x Pointer to a R value.
+ *
+ * @return true iff \a x is an S4 object.
+ */
 int (IS_S4_OBJECT)(SEXP x);
 void (SET_S4_OBJECT)(SEXP x);
 void (UNSET_S4_OBJECT)(SEXP x);
@@ -544,22 +672,127 @@ void (UNSET_S4_OBJECT)(SEXP x);
 /* Vector Access Functions */
 int  (LENGTH)(SEXP x);
 int  (TRUELENGTH)(SEXP x);
+
+/**
+ * Set length of vector.
+ *
+ * @param x Pointer to a vector object.
+ *
+ * @param v The required new length, which must not be greater than
+ *          the original length of the vector.
+ */
 void (SETLENGTH)(SEXP x, int v);
+
+/**
+ * Set 'true length' of vector.
+ *
+ * @param x Pointer to a vector object.
+ *
+ * @param v The required new 'true length'.
+ */
+
 void (SET_TRUELENGTH)(SEXP x, int v);
+
+/**
+ * @param x Pointer to a vector object.
+ *
+ * @return The length of \a x, or 0 if \a x is R_NilValue.  (In
+ *         the case of certain hash tables, this means the 'capacity'
+ *         of \a x , not all of which may be used.)
+ */
 R_xlen_t  (XLENGTH)(SEXP x);
+
+/**
+ * @param x Pointer to a vector object.
+ *
+ * @return The 'true length' of \a x.  According to the R Internals
+ *         document for R 2.4.1, this is only used for certain hash
+ *         tables, and signifies the number of used slots in the
+ *         table.
+ */
 R_xlen_t  (XTRUELENGTH)(SEXP x);
 int  (IS_LONG_VEC)(SEXP x);
 int  (LEVELS)(SEXP x);
 int  (SETLEVELS)(SEXP x, int v);
 
+/**
+ * @param x Pointer to a logical vector.
+ *
+ * @return Pointer to the first element of \a x .
+ */
 int  *(LOGICAL)(SEXP x);
+
+/**
+ * @param x Pointer to an \c IntVector or a \c LogicalVector (i.e. an
+ *          R integer or logical vector).
+ *
+ * @return Pointer to the first element of \a x .
+ */
 int  *(INTEGER)(SEXP x);
+
+/**
+ * @param x Pointer to a raw vector.
+ *
+ * @return Pointer to the first element of \a x .
+ */
 Rbyte *(RAW)(SEXP x);
+
+/**
+ * @param x Pointer to a numeric vector.
+ *
+ * @return Pointer to the first element of \a x .
+ */
 double *(REAL)(SEXP x);
+
+/**
+ * @param x Pointer to a complex vector.
+ *
+ * @return Pointer to the first element of \a x .
+ */
 Rcomplex *(COMPLEX)(SEXP x);
+
+/**
+ * @brief Examine element of a character vector.
+ *
+ * @param x Pointer to a character vector.
+ *
+ * @param i Index of the required element.  There is no bounds
+ *          checking.
+ *
+ * @return Pointer to extracted \a i 'th element.
+ */
 SEXP (STRING_ELT)(SEXP x, R_xlen_t i);
+
+/** @brief Examine element of a list.
+ *
+ * @param x Pointer to a list.
+ *
+ * @param i Index of the required element.  There is no bounds checking.
+ *
+ * @return The value of the \a i 'th element.
+ */
 SEXP (VECTOR_ELT)(SEXP x, R_xlen_t i);
+
+/** @brief Set element of character vector.
+ * 
+ * @param x Pointer to a character vector .
+ *
+ * @param i Index of the required element.  There is no bounds checking.
+ *
+ * @param v Pointer to CHARSXP representing the new value.
+ */
 void SET_STRING_ELT(SEXP x, R_xlen_t i, SEXP v);
+
+/** @brief Set element of list.
+ *
+ * @param x Pointer to a list.
+ *
+ * @param i Index of the required element.
+ *
+ * @param v Pointer to R value representing the new value.
+ *
+ * @return The new value \a v.
+ */
 SEXP SET_VECTOR_ELT(SEXP x, R_xlen_t i, SEXP v);
 SEXP *(STRING_PTR)(SEXP x);
 SEXP * NORET (VECTOR_PTR)(SEXP x);
@@ -572,55 +805,303 @@ SEXP * NORET (VECTOR_PTR)(SEXP x);
 /* These also work for ... objects */
 #define CONS(a, b)	cons((a), (b))		/* data lists */
 #define LCONS(a, b)	lcons((a), (b))		/* language lists */
+
+/** @brief Get tag of pairlist element.
+ *
+ * @param e Pointer to a pairlist element, or R_NilValue.
+ * @return Pointer to the tag of the list element, or 0 if \a e is
+ * R_NilValue.
+ */
 SEXP (TAG)(SEXP e);
+
+/** @brief Get car of pairlist element.
+ *
+ * @param e Pointer to a pairlist element, or R_NilValue.
+ * @return Pointer to the value of the list car, or 0 if \a e is
+ * R_NilValue.
+ */
+
 SEXP (CAR)(SEXP e);
+/** @brief Get tail of pairlist element.
+ *
+ * @param e Pointer to a pairlist element, or R_NilValue.
+ * @return Pointer to the tail of the list, or 0 if \a e is
+ * R_NilValue.
+ */
 SEXP (CDR)(SEXP e);
+
+/**
+ * @brief Equivalent to CAR(CAR(e)).
+ */
 SEXP (CAAR)(SEXP e);
+
+/**
+ * @brief Equivalent to CDR(CAR(e)).
+ */
 SEXP (CDAR)(SEXP e);
+
+/**
+ * @brief Equivalent to CAR(CDR(e)).
+ */
 SEXP (CADR)(SEXP e);
+
+/**
+ * @brief Equivalent to CDR(CDR(e)).
+ */
 SEXP (CDDR)(SEXP e);
+
+/**
+ * @brief Equivalent to CDR(CDR(CDR(e))).
+ */
 SEXP (CDDDR)(SEXP e);
+
+/**
+ * @brief Equivalent to CAR(CDR(CDR(e))).
+ */
 SEXP (CADDR)(SEXP e);
+
+/**
+ * @brief Equivalent to CAR(CDR(CDR(CDR(e)))).
+ */
 SEXP (CADDDR)(SEXP e);
+
+/**
+ * @brief Equivalent to CAR(CDR(CDR(CDR(CDR(e))))).
+ */
 SEXP (CAD4R)(SEXP e);
 int  (MISSING)(SEXP x);
 void (SET_MISSING)(SEXP x, int v);
+
+/**
+ * @brief Set the tag of a pairlist element.
+ *
+ * @param x Pointer to a pairlist element.
+ * @param y Pointer to an R value representing the new tag of
+ *          the pairlist element.
+ */
 void SET_TAG(SEXP x, SEXP y);
+
+/**
+ * @brief Set the 'car' value of a pairlist element.
+ * @param x Pointer to a pairlist element.
+ * @param y Pointer to an R value representing the new value of the
+ *          list car.
+ *
+ * @returns \a y.
+ */
 SEXP SETCAR(SEXP x, SEXP y);
+
+/**
+ * @brief Replace the tail of a pairlist element.
+ * @param x Pointer to a pairlist element.
+ * @param y Pointer to an R value representing the new tail of the list.
+ *
+ * @returns \a y.
+ */
 SEXP SETCDR(SEXP x, SEXP y);
+
+/**
+ * @brief Set the 'car' value of the second element of list.
+ * @param x Pointer to a pairlist element with at least one successor
+ *         .
+ * @param y Pointer to an R value representing the new value of the
+ *          second element of the list.
+ *
+ * @returns \a y.
+ */
 SEXP SETCADR(SEXP x, SEXP y);
+
+/**
+ * @brief Set the 'car' value of the third element of list.
+ * @param x Pointer to a pairlist element with at least two
+ *          successors.
+ * @param y Pointer to an R value representing the new value of the
+ *          third element of the list.
+ *
+ * @returns \a y.
+ */
 SEXP SETCADDR(SEXP x, SEXP y);
+
+/**
+ * @brief Set the 'car' value of the fourth element of list.
+ * @param x Pointer to a pairlist element with at least three
+ *          successors.
+ * @param y Pointer to an R value representing the new value of the
+ *          fourth element of the list.
+ *
+ * @returns \a y.
+ */
 SEXP SETCADDDR(SEXP x, SEXP y);
+
+/**
+ * @brief Set the 'car' value of the fifth element of list.
+ * @param x Pointer to a pairlist element with at least four
+ *          successors.
+ * @param y Pointer to an R value representing the new value of the
+ *          fifth element of the list.
+ *
+ * @returns \a y.
+ */
 SEXP SETCAD4R(SEXP e, SEXP y);
 
 SEXP CONS_NR(SEXP a, SEXP b);
 
 /* Closure Access Functions */
+
+/** @brief Access formal arguments of a closure.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @return Pointer to the formal argument list of \a x.
+ */
 SEXP (FORMALS)(SEXP x);
+
+/** @brief Access the body of a closure.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @return Pointer to the body of \a x.
+ */
 SEXP (BODY)(SEXP x);
+
+/** @brief Access the environment of a closure.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @return Pointer to the environment of x.
+ */
 SEXP (CLOENV)(SEXP x);
+
+/** @brief Query debugging status.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @return \c true if debugging is set, i.e. evaluations of the
+ *         function should run under the browser.
+ */
 int  (RDEBUG)(SEXP x);
 int  (RSTEP)(SEXP x);
+
+/** @brief Get function tracing status.
+ *
+ * @param x Pointer to a function, or R_NilValue.
+ *
+ * @return Refer to 'R Internals' document.  Returns 0 if \a x is R_NilValue.
+ */
 int  (RTRACE)(SEXP x);
+
+/**
+ * Set the debugging state of a closure object.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @param v The new debugging state.
+ */
 void (SET_RDEBUG)(SEXP x, int v);
 void (SET_RSTEP)(SEXP x, int v);
+
+/** @brief Set function tracing status.
+ *
+ * @param x Pointer to a function, or R_NilValue.
+ *
+ * @param v The desired tracing status: non-zero if tracing is
+ * required.
+ */
 void (SET_RTRACE)(SEXP x, int v);
 void SET_FORMALS(SEXP x, SEXP v);
 void SET_BODY(SEXP x, SEXP v);
+
+/** @brief Replace the environment of a closure.
+ *
+ * @param x Pointer to a closure object.
+ *
+ * @param v Pointer to the environment now to be
+ *          considered as the environment of this closure.
+ *          R_NilValue is not permissible.
+ */
 void SET_CLOENV(SEXP x, SEXP v);
 
 /* Symbol Access Functions */
+
+/** @brief Symbol name.
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @return Pointer to a CHARSXP representing \a x's name.
+ */
 SEXP (PRINTNAME)(SEXP x);
+
+/** @brief Symbol's value in the base environment.
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @return Pointer to an R value representings \a x's value.
+ *         Returns R_UnboundValue if no value is currently
+ *         associated with the Symbol.
+ */
 SEXP (SYMVALUE)(SEXP x);
+
+/** @brief Get function accessed via <tt>.Internal()</tt>.
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @return If \a x is associated with a function invoked in R \e
+ * via <tt>.Internal()</tt>, then a pointer to the appropriate
+ * function, otherwise R_NilValue.
+ */
 SEXP (INTERNAL)(SEXP x);
+
+/** @brief Does symbol relate to a <tt>...</tt> expression?
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @return \c TRUE iff this symbol denotes an element of a
+ *         <tt>...</tt> expression.
+ */
 int  (DDVAL)(SEXP x);
 void (SET_DDVAL)(SEXP x, int v);
 void SET_PRINTNAME(SEXP x, SEXP v);
+
+/** @brief Set symbol's value in the base environment.
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @param val Pointer to the R value now to be considered as
+ *            the value of this symbol.  R_NilValue or
+ *            R_UnboundValue are permissible values of \a val.
+ *
+ * @todo No binding to R_UnboundValue ought to be created.
+ */
 void SET_SYMVALUE(SEXP x, SEXP v);
+
+/** @brief Associate a Symbol with a <tt>.Internal()</tt> function.
+ *
+ * @param x Pointer to a symbol.
+ *
+ * @param v Pointer to the builtin function to be
+ * associated by this symbol.  R_NilValue is permissible, and
+ * signifies that any previous association of \a sym with a
+ * function is to be removed from the table.
+ */
 void SET_INTERNAL(SEXP x, SEXP v);
 
 /* Environment Access Functions */
+
+/** @brief Access an environment's Frame, represented as a pairlist.
+ *
+ * @param x Pointer to an environment.
+ *
+ * @return Pointer to a pairlist representing the contents of the
+ * Frame of \a x (may be R_NilValue).
+ */
 SEXP (FRAME)(SEXP x);
+
+/** @brief Access enclosing environment.
+ *
+ * @param x Pointer to an environment.
+ *
+ * @return Pointer to the enclosing environment of \a x .
+ */
 SEXP (ENCLOS)(SEXP x);
 SEXP (HASHTAB)(SEXP x);
 int  (ENVFLAGS)(SEXP x);
@@ -631,12 +1112,49 @@ void SET_HASHTAB(SEXP x, SEXP v);
 
 /* Promise Access Functions */
 /* First five have macro versions in Defn.h */
+
+/** @brief Access the expression of a promise.
+ *
+ * @param x Pointer to a promise.
+ *
+ * @return Pointer to the expression to be evaluated by the
+ *         promise. 
+ */
 SEXP (PRCODE)(SEXP x);
+
+/** @brief Access the environment of a promise.
+ *
+ * @param x Pointer to a promise.
+ *
+ * @return Pointer to the environment in which the promise
+ *         is to be  evaluated.  Set to R_NilValue when the
+ *         promise has been evaluated.
+ */
 SEXP (PRENV)(SEXP x);
+
+/** @brief Access the value of a promise.
+ *
+ * @param x Pointer to a promise.
+ *
+ * @return Pointer to the value of the promise, or to
+ *         R_UnboundValue if it has not yet been evaluated..
+ */
 SEXP (PRVALUE)(SEXP x);
 int  (PRSEEN)(SEXP x);
 void (SET_PRSEEN)(SEXP x, int v);
 void SET_PRENV(SEXP x, SEXP v);
+
+/** @brief Set the value of a promise.
+ *
+ * Once the value is set to something other than R_UnboundValue,
+ * the environment pointer is set to R_NilValue.
+ *
+ * @param x Pointer to a promise.
+ *
+ * @param v Pointer to the value to be assigned to the promise.
+ *
+ * @todo Replace this with a method call to evaluate the promise.
+ */
 void SET_PRVALUE(SEXP x, SEXP v);
 void SET_PRCODE(SEXP x, SEXP v);
 void SET_PRSEEN(SEXP x, int v);
@@ -775,8 +1293,34 @@ SEXP Rf_allocFormalsList4(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4);
 SEXP Rf_allocFormalsList5(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4, SEXP sym5);
 SEXP Rf_allocFormalsList6(SEXP sym1, SEXP sym2, SEXP sym3, SEXP sym4, SEXP sym5, SEXP sym6);
 SEXP Rf_allocMatrix(SEXPTYPE mode, int nrow, int ncol);
+
+/** @brief Create a pairlist of a specified length.
+ *
+ * This constructor creates a pairlist with a specified
+ * number of elements.  On creation, each element has 'car' and 'tag'
+ * set to R_NilValue.
+ *
+ * @param n Number of elements required in the list.
+ *
+ * @return The constructed list, or R_NilValue if \a n is zero.
+ */
 SEXP Rf_allocList(int n);
+
+/** @brief Create an S4 object.
+ *
+ * @return Pointer to the created object.
+ */
 SEXP Rf_allocS4Object(void);
+
+/** @brief Create an object of a type derived from pairlist element.
+ *
+ * The object is created with car, tag and tail pointers all set to R_NilValue.
+ *
+ * @param t The SEXPTYPE of the required object. Must be one of
+ *          LISTSXP, LANGSXP, DOTSXP or BCODESXP.
+ *
+ * @return Pointer to the created object.
+ */
 SEXP Rf_allocSExp(SEXPTYPE t);
 SEXP Rf_allocVector3(SEXPTYPE type, R_xlen_t length, R_allocator_t* allocator);
 R_xlen_t Rf_any_duplicated(SEXP x, Rboolean from_last);
@@ -785,9 +1329,39 @@ SEXP Rf_applyClosure(SEXP call, SEXP op, SEXP arglist, SEXP rho, SEXP suppliedva
 SEXP Rf_arraySubscript(int dim, SEXP s, SEXP dims, SEXP (*)(SEXP,SEXP dng),
                        SEXP (*)(SEXP, int strg), SEXP x);
 SEXP Rf_classgets(SEXP vec, SEXP klass);
+
+/** @brief Creates a pairlist with a specified car and tail.
+ *
+ * This function protects its arguments from the garbage collector.
+ *
+ * @param cr Pointer to the 'car' of the element to be created.
+ *
+ * @param tl Pointer to the 'tail' of the element to be created,
+ *          which must be a pairlist or R_NilValue.
+ *
+ * @return Pointer to the constructed pairlist.
+ */
 SEXP Rf_cons(SEXP car, SEXP cdr);
 void Rf_copyMatrix(SEXP s, SEXP t, Rboolean byrow);
 void Rf_copyListMatrix(SEXP s, SEXP t, Rboolean byrow);
+
+/** @brief Copy attributes, with some exceptions.
+ *
+ * This is called in the case of binary operations to copy most
+ * attributes from one of the input arguments to the output.
+ * Note that the Dim, Dimnames and Names attributes are not
+ * copied: these should have been assigned elsewhere.  The
+ * function also copies the S4 object status.
+ *
+ * @param inp Pointer to the R value from which attributes are to
+ *          be copied.
+ *
+ * @param ans Pointer to the R value to which attributes are to be
+ *          copied.
+ *
+ * @note The above documentation is probably incomplete: refer to the
+ *       source code for further details.
+ */
 void Rf_copyMostAttrib(SEXP inp, SEXP ans);
 void Rf_copyVector(SEXP s, SEXP t);
 int Rf_countContexts(int ctxttype, int browser);
@@ -802,6 +1376,15 @@ SEXP Rf_lazy_duplicate(SEXP s);
 /* the next really should not be here and is also in Defn.h */
 SEXP Rf_duplicated(SEXP x, Rboolean from_last);
 Rboolean R_envHasNoSpecialSymbols(SEXP env);
+
+/** @brief Evaluate an object in a specified Environment.
+ *
+ * @param e Pointer to the object to be evaluated.
+ *
+ * @param rho Pointer to an Environment
+ *
+ * @return Pointer to the result of evaluating \a e in \a rho.
+ */
 SEXP Rf_eval(SEXP e, SEXP rho);
 SEXP Rf_findFun(SEXP symbol, SEXP rho);
 void Rf_findFunctionForBody(SEXP body);
@@ -818,7 +1401,7 @@ void Rf_findFunctionForBody(SEXP body);
  *
  * @gc if one of the environments is of class "UserDefinedDatabase" or active bindings 
  * (\ref R_MakeActiveBinding) are used.
-*/
+ */
 SEXP Rf_findVar(SEXP symbol, SEXP rho);
 SEXP Rf_findVarInFrame(SEXP rho, SEXP symbol);
 
@@ -838,8 +1421,26 @@ SEXP Rf_findVarInFrame(SEXP rho, SEXP symbol);
  *
  * @gc if the environments is of class "UserDefinedDatabase" or active bindings 
  * (\ref R_MakeActiveBinding) are used.
-*/
+ */
 SEXP Rf_findVarInFrame3(SEXP rho, SEXP symbol, Rboolean doGet);
+
+/** @brief Access a named attribute.
+ *
+ * @param vec Pointer to the R value whose attributes are to be
+ *          accessed.
+ *
+ * @param name Either a pointer to the symbol representing the
+ *          required attribute, or a pointer to a character vector
+ *          containing the required symbol name as the first element; in
+ *          the latter case, as a side effect, the corresponding
+ *          symbol is installed if necessary.
+ *
+ * @return Pointer to the requested attribute, or R_NilValue
+ *         if there is no such attribute.
+ *
+ * @note The above documentation is incomplete: refer to the
+ *       source code for further details.
+ */
 SEXP Rf_getAttrib(SEXP vec, SEXP name);
 SEXP Rf_GetArrayDimnames(SEXP x);
 SEXP Rf_GetColNames(SEXP dimnames);
@@ -850,6 +1451,19 @@ int Rf_GetOptionDigits(void);
 int Rf_GetOptionWidth(void);
 SEXP Rf_GetRowNames(SEXP dimnames);
 void Rf_gsetVar(SEXP symbol, SEXP value, SEXP rho);
+
+/** @brief Get a pointer to a regular Symbol object.
+ *
+ * If no Symbol with the specified name currently exists, one will
+ * be created, and a pointer to it returned.  Otherwise a pointer
+ * to the existing Symbol will be returned.
+ *
+ * @param name The name of the required Symbol (CE_NATIVE encoding
+ *          is assumed).
+ *
+ * @return Pointer to a Symbol (preexisting or newly created) with
+ * the required name.
+ */
 SEXP Rf_install(const char * name);
 SEXP Rf_installChar(SEXP charSXP);
 SEXP Rf_installDDVAL(int i);
@@ -866,7 +1480,38 @@ SEXP R_lsInternal3(SEXP env, Rboolean all, Rboolean sorted);
 SEXP Rf_match(SEXP itable, SEXP ix, int nmatch);
 SEXP Rf_matchE(SEXP itable, SEXP ix, int nmatch, SEXP env);
 SEXP Rf_namesgets(SEXP vec, SEXP val);
+
+/** @brief Get a pointer to a CHARSXP object.
+ *
+ * CE_NATIVE encoding is assumed.  If no CHARSXP with the
+ * specified text and encoding currently exists, one will be
+ * created.  Otherwise a pointer to the existing CHARSXP will
+ * be returned.
+ *
+ * @param str The null-terminated text of the required string.
+ *
+ * @return Pointer to a string object representing the specified
+ *         text.
+ */
 SEXP Rf_mkChar(const char * name);
+
+/** @brief Create a CHARSXP object for specified text.
+ *
+ * CE_NATIVE encoding is assumed.  If no CHARSXP with the
+ * specified text and encoding currently exists, one will be
+ * created.  Otherwise a pointer to the existing CHARSXP will
+ * be returned.
+ *
+ * @param text The text of the string to be created, possibly
+ *          including embedded null characters.  The encoding is
+ *          assumed to be CE_NATIVE.
+ *
+ * @param length The length of the string pointed to by \a text.
+ *          Must be nonnegative.  The created string will comprise
+ *          the text plus an appended null byte.
+ *
+ * @return Pointer to the created string.
+ */
 SEXP Rf_mkCharLen(const char * name, int len);
 Rboolean Rf_NonNullStringMatch(SEXP s, SEXP t);
 int Rf_ncols(SEXP s);
@@ -882,9 +1527,38 @@ Rboolean Rf_pmatch(SEXP formal, SEXP tag, Rboolean exact);
 Rboolean Rf_psmatch(const char * f, const char * t, Rboolean exact);
 void Rf_PrintValue(SEXP s);
 #ifndef INLINE_PROTECT
+
+/** @brief Push a node pointer onto the C pointer protection stack.
+ *
+ * @param node Pointer to the node to be protected from the
+ *          garbage collector.
+ * @return a copy of \a node .
+ */
 SEXP Rf_protect(SEXP);
 #endif
 void Rf_readS3VarsFromFrame(SEXP, SEXP*, SEXP*, SEXP*, SEXP*, SEXP*, SEXP*);
+
+/** @brief Set or remove a named attribute.
+ *
+ * @param vec Pointer to the value whose attributes are to be
+ *          modified.
+ *
+ * @param name Either a pointer to the symbol representing the
+ *          required attribute, or a pointer to a character vector
+ *          containing the required symbol name as the first element; in
+ *          the latter case, as a side effect, the corresponding
+ *          symbol is installed if necessary.
+ *
+ * @param val Either the value to which the attribute is to be
+ *          set, or R_NilValue.  In the latter case the
+ *          attribute (if present) is removed.
+ *
+ * @return Refer to source code.  (Sometimes \a vec, sometimes \a
+ * val, sometime R_NilValue ...)
+ *
+ * @note The above documentation is probably incomplete: refer to the
+ *       source code for further details.
+ */
 SEXP Rf_setAttrib(SEXP vec, SEXP name, SEXP val);
 void Rf_setSVector(SEXP* vec, int len, SEXP val);
 void Rf_setVar(SEXP symbol, SEXP value, SEXP rho);
@@ -894,14 +1568,55 @@ Rboolean Rf_StringBlank(SEXP x);
 SEXP Rf_substitute(SEXP lang,SEXP rho);
 const char * Rf_translateChar(SEXP x);
 const char * Rf_translateChar0(SEXP x);
+
+/** @brief Convert contents of a CHARSXP to UTF8.
+ *
+ * @param x Pointer to a CHARSXP.
+ *
+ * @return The text of \a x rendered in UTF8 encoding.
+ *
+ * @note The result is held in memory allocated using R_alloc().
+ * The calling code must arrange for this memory to be released in
+ * due course.
+ */
 const char * Rf_translateCharUTF8(SEXP x);
+
+/** @brief Name of type within R.
+ *
+ * Translate a SEXPTYPE to the name by which it is known within R.
+ *
+ * @param st The SEXPTYPE whose name is required.
+ *
+ * @return The SEXPTYPE's name within R.
+ */
 const char * Rf_type2char(SEXPTYPE t);
 SEXP Rf_type2rstr(SEXPTYPE t);
 SEXP Rf_type2str(SEXPTYPE t);
 SEXP Rf_type2str_nowarn(SEXPTYPE t);
 #ifndef INLINE_PROTECT
+
+/** @brief Pop cells from the C pointer protection stack.
+ *
+ * As a consistency check, it is required that the unprotect takes
+ * place within the same ProtectStack::Scope as the corresponding
+ * protects.
+ *
+ * @param count Number of cells to be popped.  Must not be
+ *          larger than the current size of the C pointer
+ *          protection stack.
+ */
 void Rf_unprotect(int);
 #endif
+
+/** @brief Remove entry from pointer protection stack.
+ *
+ * Removes from the C pointer protection stack the uppermost stack
+ * cell containing a pointer to a specified node, and drops all
+ * the stack cells above it by one place.
+ *
+ * @param node Pointer to the node whose cell is to be removed
+ *          from the C pointer protection stack.
+ */
 void Rf_unprotect_ptr(SEXP s);
 
 void NORET R_signal_protect_error(void);
@@ -909,7 +1624,38 @@ void NORET R_signal_unprotect_error(void);
 void NORET R_signal_reprotect_error(PROTECT_INDEX i);
 
 #ifndef INLINE_PROTECT
+
+/** @brief Push a node pointer onto the C pointer protection stack.
+ *
+ * Push a node pointer onto the C pointer protection stack, and
+ * record the index of the resulting stack cell (for subsequent
+ * use with R_Reprotect).
+ *
+ * @param node Pointer to the node to be protected from the
+ *          garbage collector.
+ *
+ * @param iptr Pointer to a location in which the stack cell index
+ *          is to be stored.
+ */
 void R_ProtectWithIndex(SEXP, PROTECT_INDEX *);
+
+/** @brief Retarget a cell in the C pointer protection stack.
+ *
+ * Change the node that a particular cell in the C pointer
+ * protection stack protects.  As a consistency check, it is
+ * required that the reprotect takes place within the same
+ * ProtectStack::Scope as the original protect.
+ *
+ * @param node Pointer to the node now to be protected from
+ *          the garbage collector by the designated stack
+ *          cell.  (Not necessarily a different node from the
+ *          one currently protected.)
+ *
+ * @param index Index (as returned by R_ProtectWithIndex() ) of
+ *          the stack cell to be retargeted to node.  Must be less
+ *          than the current size of the C pointer protection
+ *          stack.
+ */
 void R_Reprotect(SEXP, PROTECT_INDEX);
 #endif
 SEXP R_tryEval(SEXP e, SEXP env, int * ErrorOccurred);
@@ -933,7 +1679,45 @@ typedef enum {
 } cetype_t;
 
 cetype_t Rf_getCharCE(SEXP x);
+
+/** @brief Get a pointer to a CHARSXP object.
+ *
+ * If no CHARSXP with the specified text and encoding
+ * currently exists, one will be created.  Otherwise a pointer to
+ * the existing CHARSXP will be returned.
+ *
+ * @param str The null-terminated text of the required cached string.
+ *
+ * @param encoding The encoding of the required String.
+ *          Only CE_NATIVE, CE_UTF8 or CE_LATIN1 are permitted in
+ *          this context.
+ *
+ * @return Pointer to a string object representing the specified
+ *         text in the specified encoding.
+ */
 SEXP Rf_mkCharCE(const char * name, cetype_t enc);
+
+/** @brief Create a CHARSXP object for specified text and
+ * encoding.
+ *
+ * If no CHARSXP with the specified text and encoding
+ * currently exists, one will be created.  Otherwise a pointer to
+ * the existing CHARSXP will be returned.
+ *
+ * @param text The text of the string to be created, possibly
+ *          including embedded null characters.  The encoding is
+ *          assumed to be CE_NATIVE.
+ *
+ * @param length The length of the string pointed to by \a text.
+ *          Must be nonnegative.  The created string will comprise
+ *          the text plus an appended null byte.
+ *
+ * @param encoding The encoding of the required String.
+ *          Only CE_NATIVE, CE_UTF8 or CE_LATIN1 are permitted in
+ *          this context.
+ *
+ * @return Pointer to the created string.
+ */
 SEXP Rf_mkCharLenCE(const char * name, int len, cetype_t enc);
 const char *Rf_reEnc(const char *x, cetype_t ce_in, cetype_t ce_out, int subst);
 
@@ -950,13 +1734,72 @@ const char *Rf_reEnc(const char *x, cetype_t ce_in, cetype_t ce_out, int subst);
 SEXP R_forceAndCall(SEXP e, int n, SEXP rho);
 
 /* External pointer interface */
+
+/** @brief Create an external pointer object.
+ *
+ * @param p The pointer that the external pointer object is
+ *          to encapsulate.  May be NULL.
+ * @param tag Pointer to the tag object.  May be R_NilValue (and
+ *          often is).
+ * @param prot Pointer to the protege object.  May be R_NilValue
+ *          (and often is).
+ *
+ * @return Pointer to the created external pointer object.
+ */
 SEXP R_MakeExternalPtr(void *p, SEXP tag, SEXP prot);
+
+/** @brief Get the encapsulated external pointer.
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @return the external pointer encapsulated by \a s.
+ */
 void *R_ExternalPtrAddr(SEXP s);
+
+/** @brief Get pointer to tag object.
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @return a pointer to the tag object of \a s.
+ */
 SEXP R_ExternalPtrTag(SEXP s);
+
+/** @brief Get pointer to protege object.
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @return a pointer to the protege object of \a s.
+ */
 SEXP R_ExternalPtrProtected(SEXP s);
+
+/** @brief Reset the encapsulated pointer to R_NilValue.
+ *
+ * @param s Pointer to an external pointer object.
+ */
 void R_ClearExternalPtr(SEXP s);
+
+/** @brief Set the value of the encapsulated pointer
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @param p New pointer value (may be NULL).
+ */
 void R_SetExternalPtrAddr(SEXP s, void *p);
+
+/** @brief Designate the tag object.
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @param tag Pointer to the new tag object (or R_NilValue).
+ */
 void R_SetExternalPtrTag(SEXP s, SEXP tag);
+
+/** @brief Designate the protege object.
+ *
+ * @param s Pointer to an external pointer object.
+ *
+ * @param p Pointer to the new protege object (or R_NilValue).
+ */
 void R_SetExternalPtrProtected(SEXP s, SEXP p);
 
 /* Finalization interface */
@@ -1114,7 +1957,25 @@ int R_check_class_and_super(SEXP x, const char **valid, SEXP rho);
 int R_check_class_etc      (SEXP x, const char **valid);
 
 /* preserve objects across GCs */
+
+/** @brief Protect object against garbage collection.
+ *
+ * This is intended for long-term protection, for which PROTECT()
+ * etc. would be inappropriate.
+ *
+ * @param object Pointer to the object to be preserved.  It is
+ *          permissible for this to be R_NilValue.
+ */
 void R_PreserveObject(SEXP object);
+
+/** @brief Remove object's protection against garbage collection.
+ *
+ * @param object Pointer to the object whose protection is to be
+ *          removed.  It is permissible (but pointless) for this
+ *          to be a pointer to an object that is not currently
+ *          protected by R_PreserveObject(), but in that case
+ *          R_ReleaseObject() has no effect.
+ */
 void R_ReleaseObject(SEXP object);
 
 /* Shutdown actions */
@@ -1335,6 +2196,20 @@ void R_orderVector1(int *indx, int n, SEXP x,       Rboolean nalast, Rboolean de
    It is *essential* that these do not appear in any other header file,
    with or without the Rf_ prefix.
 */
+
+/**
+ * @brief Create a vector object.
+ *
+ *  Allocate a vector object.  This ensures only validity of
+ *  SEXPTYPE values representing lists (as the elements must be
+ *  initialized).
+ *
+ * @param stype The type of vector required.
+ *
+ * @param length The length of the vector to be created.
+ *
+ * @return Pointer to the created vector.
+ */
 SEXP     Rf_allocVector(SEXPTYPE, R_xlen_t);
 Rboolean Rf_conformable(SEXP, SEXP);
 SEXP	 Rf_elt(SEXP, int);
@@ -1356,6 +2231,16 @@ Rboolean Rf_isTs(SEXP);
 Rboolean Rf_isUserBinop(SEXP);
 Rboolean Rf_isValidString(SEXP);
 Rboolean Rf_isValidStringF(SEXP);
+
+/** @brief Is an R value a vector?
+ *
+ * Vector in this context embraces R matrices and arrays.
+ *
+ * @param s Pointer to the R value to be tested.  The value may be
+ *          R_NilValue, in which case the function returns FALSE.
+ *
+ * @return TRUE iff \a s points to a vector object.
+ */
 Rboolean Rf_isVector(SEXP);
 Rboolean Rf_isVectorAtomic(SEXP);
 Rboolean Rf_isVectorList(SEXP);
@@ -1367,6 +2252,18 @@ SEXP	 Rf_lang4(SEXP, SEXP, SEXP, SEXP);
 SEXP	 Rf_lang5(SEXP, SEXP, SEXP, SEXP, SEXP);
 SEXP	 Rf_lang6(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
 SEXP	 Rf_lastElt(SEXP);
+
+/** @brief Create an Expression with a specified car and tail.
+ *
+ * This function protects its arguments from the garbage collector.
+ *
+ * @param cr Pointer to the 'car' of the element to be created.
+ *
+ * @param tl Pointer to the 'tail' of the element to be created,
+ *          which must be a pairlist or R_NilValue.
+ *
+ * @return Pointer to the constructed list.
+ */
 SEXP	 Rf_lcons(SEXP, SEXP);
 R_len_t  Rf_length(SEXP);
 SEXP	 Rf_list1(SEXP);
